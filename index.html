@@ -217,7 +217,7 @@
           { text: "Enable separate loading of related lists", value: "C" },
           { text: "Enable lazy loading of the detail page", value: "D" }
         ],
-        correctAnswer: "A",
+        correctAnswer: "B",
         explanation: "Enabling personal page layouts allows users to customize their layout, making it easier for them to find the information that is relevant to them without seeing unnecessary fields."
       },
       {
@@ -325,8 +325,9 @@
           { text: "Once defined, a custom fiscal year cannot be modified", value: "D" },
           { text: "Once enabled, custom fiscal years can no longer be disabled", value: "B" },
           { text: "Custom fiscal years Impact forecasts, reports, and quotas", value: "E" }
+          { text: "When the fiscal year start moth is changed, quota and adjustment information is purged", value: "A" }
         ],
-        correctAnswer: ["E", "D", "B"],
+        correctAnswer: ["E", "A", "B"],
         explanation: "Fiscal years can be modified at any time, but once a custom fiscal year is enabled, it cannot be disabled. Custom fiscal year settings impact reports, quotas, and forecasts."
       },
       {
@@ -350,8 +351,8 @@
           { text: "Use the Lightning Mobile Page for mobile users", value: "C" },
           { text: "Build a separate Lightning App for mobile devices", value: "D" }
         ],
-        correctAnswer: "B",
-        explanation: "Setting Action Visibility in the page layout editor allows the visibility of actions to be controlled based on user-specific criteria."
+        correctAnswer: "A",
+        explanation: "Dynamic Actions are supported in the mobile app for custom and standard objects. Once Dynamic Actions is enabled on a Lightning record page in App Builder, action visibility can be set based on filters such as the field value of the record, device of the current user, and more. After Dynamic Actions has been enabled, the actions available in the highlights panel of the record page are no longer controlled from the object's page layout. Setting Action Visibility is performed in Lightning App Builder. A Lightning Mobile Page does not exist. Building a separate Lightning App for mobile devices does not help since Action Visibility is configured at the object level and not at the App level."
       },
       {
         id: 29,
@@ -443,10 +444,11 @@
         options: [
           { text: "A person’s name would always be considered personal data.", value: "A" },
           { text: "An example of sensitive data is medical and insurance records related to an individual.", value: "B" },
+          { text: "An example of personal data is Name, Date of Birth, and Email address.", value: "C" },          
           { text: "Personal data is only stored in the Contact object.", value: "D" },
           { text: "Personal data could be stored in any standard or custom object.", value: "E" }
         ],
-        correctAnswer: ["B", "D"],
+        correctAnswer: ["B", "D","C"],
         explanation: "Personal data can include names and other identifiable information stored in specific Salesforce objects like Contacts. Sensitive data includes medical and insurance records, which must be protected."
       },
       {
@@ -478,11 +480,11 @@
         text: "Which are valid options when moving change sets from one Salesforce environment to another?",
         options: [
           { text: "A sandbox org and its related production org", value: "A" },
-          { text: "Any sandbox orgs that are related to the same production org", value: "B" },
+          { text: "Any two sandboxes orgs that are related to the same production org", value: "B" },
           { text: "A production org that is related to another production org", value: "C" },
           { text: "One sandbox to another sandbox whether related or not", value: "D" }
         ],
-        correctAnswer: "B",
+        correctAnswer: ["A", "B"],
         explanation: "Change sets can only be sent between orgs that are connected to the same production org, such as two sandboxes of a production org or a sandbox and its production org."
       },
       {
