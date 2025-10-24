@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cuestionario Salesforce Administrator</title>
+  <title>Cuestionario Salesforce AI Specialist</title>
   <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone@7.22.5/babel.min.js"></script>
@@ -15,578 +15,1707 @@
     const questions = [
       {
         id: 1,
-        text: "What option should be selected when choosing an 'Action Type' to create a quick action that launches a Lightning web component?",
+        text: "An AI Specialist wants to troubleshoot their Agent's performance. Where should the AI Specialist go to access all user interactions with the Agent, including Agent errors, incorrectly triggered actions, and incomplete plans?",
         options: [
-          { text: "Lightning Component", value: "C" },
-          { text: "Custom Component", value: "D" },
-          { text: "Lightning Web Component", value: "A" },
-          { text: "Flow", value: "B" }
+          { text: "Event Logs", value: "A" },
+          { text: "Agent Analytics", value: "B" },
+          { text: "AI Audit Trail", value: "C" },
+          { text: "Debug Logs", value: "D" }
         ],
         correctAnswer: "A",
-        explanation: "Unlike global quick actions, object-specific quick actions support Lightning web components. To create a Lightning web component quick action, the 'Lightning Web Component' action type is selected. The 'Lightning Component' option is selected when creating a quick action for an Aura component."
+        explanation: "Event Logs capturan datos detallados de interacciones, errores, acciones mal disparadas y planes incompletos. Es la fuente principal para auditoría y diagnóstico."
       },
       {
         id: 2,
-        text: "An organization has recently enabled multiple currencies. Additional currencies were added and activated for users. What will the users' experience be when they create a new opportunity record?",
+        text: "Universal Containers plans to implement prompt templates that utilize the standard foundation models. What should the AI Specialist consider when building prompt templates in Prompt Builder?",
         options: [
-          { text: "Users will be able to create opportunities in any active currency.", value: "C" },
-          { text: "Users can only create opportunities in the corporate currency.", value: "D" },
-          { text: "Users will be able to create opportunities in any currency.", value: "B" },
-          { text: "Users will be able to create opportunities only in their default currency.", value: "A" }
+          { text: "Use only formal language", value: "A" },
+          { text: "Avoid merge fields", value: "B" },
+          { text: "Train LLM with data using different writing styles including word choice, intensifiers, emojis, and punctuation.", value: "C" },
+          { text: "Limit to 100 tokens", value: "D" }
         ],
         correctAnswer: "C",
-        explanation: "After multi-currency is enabled, the administrator must maintain a list of active currencies and their conversion rates relative to the corporate currency. Only active currencies can be used in currency amount fields."
+        explanation: "Entrenar con estilos variados mejora la adaptabilidad del modelo a diferentes patrones de escritura."
       },
       {
         id: 3,
-        text: "The Global Containers Sales Team has noticed that when exchange rates are updated, opportunity amounts recorded in additional currencies change. How can a Salesforce Administrator avoid having opportunity amounts on closed opportunities change when exchange rates are updated?",
+        text: "Universal Containers wants to utilize Einstein for Sales to help sales reps reach their sales quotas by providing AI-generated plans containing guidance and steps for closing deals. Which feature should the AI Specialist recommend?",
         options: [
-          { text: "Enable 'Advanced Currency Management' and set dated exchange rates.", value: "D" },
-          { text: "Lock the amount on the opportunity record.", value: "C" },
-          { text: "Opportunity amounts will always display with the latest exchange rate.", value: "B" },
-          { text: "Update the exchange rate on a monthly basis.", value: "A" }
+          { text: "Opportunity Insights", value: "A" },
+          { text: "Sales Email Draft", value: "B" },
+          { text: "Create Close Plan", value: "C" },
+          { text: "Pipeline Inspection", value: "D" }
         ],
-        correctAnswer: "D",
-        explanation: "Enabling 'Advanced Currency Management' allows the setting of dated exchange rates. Opportunity amounts will use the applicable exchange rate, and they will not change every time the exchange rate is updated."
+        correctAnswer: "C",
+        explanation: "Genera planes específicos para cerrar oportunidades con pasos accionables."
       },
       {
         id: 4,
-        text: "Universal Containers would like to improve the usability of their current lookup fields. When looking up a Contact record, they would like to view the Account, Phone, and Email fields as well as the name. What feature would you suggest to help them with this need?",
+        text: "What should an AI Specialist consider when using related list merge fields in a prompt template associated with an Account object in Prompt Builder?",
         options: [
-          { text: "Search Layout", value: "D" },
-          { text: "Page Layout", value: "C" },
-          { text: "Tab Layout", value: "B" },
-          { text: "List View", value: "A" }
+          { text: "The Activities related list on the Account object is not supported because it is a polymorphic field.", value: "A" },
+          { text: "All related lists are supported", value: "B" },
+          { text: "Only standard related lists", value: "C" },
+          { text: "Requires custom code", value: "D" }
         ],
-        correctAnswer: "D",
-        explanation: "Search layouts are ordered groups of fields that are displayed in a particular context, such as search results, a lookup dialog, or a related list. By adding fields like the account name, they will appear beneath the record name in the instant results."
+        correctAnswer: "A",
+        explanation: "Los campos polimórficos como Activities no son compatibles con merge fields en Prompt Builder."
       },
       {
         id: 5,
-        text: "A Salesforce administrator is tasked with creating new Home pages in Lightning Experience. What should be considered when creating Home pages?",
+        text: "Universal Containers (UC) has implemented Generative AI within Salesforce to enable summarization of a custom object called Guest. Users have reported mismatches in the generated information. In refining its prompt design strategy, which key practices should UC prioritize?",
         options: [
-          { text: "Home pages can only be assigned through permission sets.", value: "C" },
-          { text: "Each app can have a different Home page assigned.", value: "D" },
-          { text: "The Home page can be customized for each profile.", value: "B" },
-          { text: "The Home page can be customized for each role.", value: "A" }
+          { text: "Use only merge fields", value: "A" },
+          { text: "Create concise, clear, and consistent prompt templates with effective grounding, contextual role-playing, clear instructions, and iterative feedback.", value: "B" },
+          { text: "Increase token limit", value: "C" },
+          { text: "Use external LLM only", value: "D" }
         ],
-        correctAnswer: ["D", "B"],
-        explanation: "The Home page can be customized in the Lightning App Builder. A different page can be assigned to different profiles and apps, and it can be customized for each profile."
+        correctAnswer: "B",
+        explanation: "Mejores prácticas: claridad, grounding, role-playing, instrucciones claras e iteración."
       },
       {
         id: 6,
-        text: "A user has asked whether it is possible to manually edit multiple records on a single page and save the changes at the same time. Which features could a Salesforce Administrator use to enable this in Lightning Experience?",
+        text: "Universal Containers noticed an increase in customer contract cancellations. Which use case functionality of Model Builder aligns with UC's request?",
         options: [
-          { text: "Give the user the 'Mass Edits from Lists' permission.", value: "B" },
-          { text: "Enable inline editing.", value: "A" },
-          { text: "Enable quick edit.", value: "C" },
-          { text: "Enable Bulk Record Updates from the settings menu.", value: "E" },
-          { text: "Enable enhanced lists.", value: "D" }
+          { text: "Lead Scoring", value: "A" },
+          { text: "Customer churn prediction", value: "B" },
+          { text: "Opportunity Win Rate", value: "C" },
+          { text: "Case Routing", value: "D" }
         ],
-        correctAnswer: ["B", "A", "D"],
-        explanation: "If both inline editing and enhanced lists are enabled, records can be directly edited in a list. Additionally, giving the user the 'Mass Edits from Lists' permission allows updating values for a common field in up to 200 selected records."
+        correctAnswer: "B",
+        explanation: "Permite identificar clientes en riesgo de cancelación para acciones proactivas."
       },
       {
         id: 7,
-        text: "European users are reporting that dates are displaying in the US date format instead of the European date format. The majority of users are based in the U.S. What is the most efficient way to handle this issue?",
+        text: "One user complains that Einstein Copilot is not deleting activities from the past 7 days. What is the reason for this issue?",
         options: [
-          { text: "Inform European users to change the locale settings in personal settings.", value: "A" },
-          { text: "Change the date format setting on the company profile.", value: "B" },
-          { text: "Change the default locale setting on the company profile.", value: "C" },
-          { text: "Manually change each European user’s locale in User settings.", value: "D" }
+          { text: "User lacks permission", value: "A" },
+          { text: "Flow not activated", value: "B" },
+          { text: "Einstein Copilot does not support the Delete Record action.", value: "C" },
+          { text: "Data Cloud not enabled", value: "D" }
         ],
-        correctAnswer: "A",
-        explanation: "The default locale setting is on the company profile, but it can be overridden by users in their personal settings. The most efficient way is to inform the affected users to change their personal settings to reflect their locale."
+        correctAnswer: "C",
+        explanation: "Einstein Copilot no soporta acciones de eliminación por razones de seguridad e integridad."
       },
       {
         id: 8,
-        text: "Each navigation bar of various apps inside a Salesforce org contains items in a particular order to ensure productivity. How can the Salesforce Administrator ensure that the users cannot change this?",
+        text: "Universal Containers is interested in improving sales operation efficiency by analyzing their data using AI-powered predictions in Einstein Studio. Which use case works for this scenario?",
         options: [
-          { text: "Permission set.", value: "A" },
-          { text: "User Interface settings.", value: "B" },
-          { text: "App personalization settings.", value: "C" },
-          { text: "Profile settings.", value: "D" }
+          { text: "Predict opportunity stage duration", value: "A" },
+          { text: "Predict customer lifetime value of an account.", value: "B" },
+          { text: "Predict case escalation", value: "C" },
+          { text: "Predict email open rate", value: "D" }
         ],
-        correctAnswer: ["B", "C"],
-        explanation: "In User Interface settings, the 'Disable Navigation Bar Personalization in Lightning Experience' option controls whether users can personalize their navigation bar. Additionally, the App Personalization Setting 'Disable end-user personalization of nav items in this app' can be applied to each app."
+        correctAnswer: "B",
+        explanation: "CLV ayuda a priorizar cuentas de alto valor y optimizar ventas."
       },
       {
         id: 9,
-        text: "A Salesforce Administrator is told that the sales rep profile should no longer have access to a tab available in an app. Which tab setting should the Salesforce Administrator use?",
+        text: "Which objects should UC select to configure Service AI Grounding?",
         options: [
-          { text: "Default On", value: "D" },
-          { text: "Tab Hidden", value: "B" },
-          { text: "Default Off", value: "A" },
-          { text: "None of the tab settings can meet this requirement.", value: "C" }
+          { text: "Case Notes and Emails", value: "A" },
+          { text: "Case and Knowledge", value: "B" },
+          { text: "Contact and Account", value: "C" },
+          { text: "Task and Event", value: "D" }
         ],
         correctAnswer: "B",
-        explanation: "The 'Tab Hidden' setting means that the tab will not be visible by default, and the user cannot enable it."
+        explanation: "Solo Case y Knowledge están soportados para grounding. Case Notes y Emails no lo están."
       },
       {
         id: 10,
-        text: "Service Silo recently overhauled their Case record page and have included new fields and buttons. Since only a communiqué was sent and no classroom training can be conducted because of the current call volume, they want their agents to still be guided with the changes to the Case record page and how to use the new layout. What is the best option to introduce these Case record changes to the agents?",
+        text: "Which business requirement would lead an AI Specialist to recommend connecting to an external foundational model via Einstein Studio (Model Builder)?",
         options: [
-          { text: "Create dev org accounts for the agents and have them practice on the new Case record page there.", value: "A" },
-          { text: "Send an email with screenshots that detail the changes to the new Case record page.", value: "B" },
-          { text: "Create a video that shows the changes to the Case record page and have the agents watch it.", value: "C" },
-          { text: "Create in-app guidance that includes instructions for the new Case record page.", value: "D" }
+          { text: "UC wants faster response time", value: "A" },
+          { text: "UC wants a model fine-tuned using company data.", value: "B" },
+          { text: "UC wants lower cost", value: "C" },
+          { text: "UC wants standard prompts", value: "D" }
         ],
-        correctAnswer: "D",
-        explanation: "With in-app guidance, supported Setup pages and record pages can come with instructions as to the steps that can be done within the page. This approach avoids the need to switch to other applications and is more efficient."
+        correctAnswer: "B",
+        explanation: "Einstein Studio permite conectar y fine-tunear modelos externos con datos propios."
       },
       {
         id: 11,
-        text: "What are valid reasons for using a custom fiscal year?",
+        text: "What is the main purpose of Prompt Builder?",
         options: [
-          { text: "There are 13-week fiscal quarters represented by three periods of 4-4-5 weeks.", value: "D" },
-          { text: "The fiscal year does not start on the first day of the month.", value: "C" },
-          { text: "The fiscal year does not start in January.", value: "B" },
-          { text: "An organization wishes to follow the Gregorian calendar.", value: "A" }
+          { text: "Train LLMs", value: "A" },
+          { text: "A tool that enables companies to create reusable prompts for large language models (LLMs).", value: "B" },
+          { text: "Manage permissions", value: "C" },
+          { text: "Deploy agents", value: "D" }
         ],
-        correctAnswer: ["D", "C"],
-        explanation: "A Custom Fiscal Year is used when an organization’s fiscal structure deviates from the standard calendar. This is necessary when there are non-standard periods or start dates that cannot be configured using the Standard Fiscal Year."
+        correctAnswer: "B",
+        explanation: "Permite crear prompts reutilizables e integrarlos en flujos de trabajo."
       },
       {
         id: 12,
-        text: "Where in an org could a Salesforce Administrator see how many remaining Salesforce licenses are available?",
+        text: "How should an organization use the Einstein Trust Layer to audit, track, and view masked data?",
         options: [
-          { text: "Manage Users -> Licenses", value: "C" },
-          { text: "Company Information page", value: "B" },
-          { text: "System Overview page", value: "A" },
-          { text: "Limits -> Licenses", value: "D" }
+          { text: "Utilize the audit trail that captures and stores all LLM submitted prompts in Data Cloud.", value: "A" },
+          { text: "Use Setup Audit Trail", value: "B" },
+          { text: "Enable Debug Logs", value: "C" },
+          { text: "Check Event Monitoring", value: "D" }
         ],
-        correctAnswer: ["B", "A"],
-        explanation: "The Company Information page lists the number of licenses available, used, and remaining. The System Overview page shows system limits including the most used licenses and the number remaining."
+        correctAnswer: "A",
+        explanation: "El audit trail en Data Cloud registra prompts, masking y respuestas."
       },
       {
         id: 13,
-        text: "Global Shipping does business in a number of different countries but wants to report in a single currency. The Salesforce Administrator is considering enabling multi-currency. What additional steps must be taken after multi-currency is enabled?",
+        text: "How should the AI Specialist verify the privacy of the masked data in the Einstein Trust Layer?",
         options: [
-          { text: "Set the corporate currency", value: "A" },
-          { text: "Set the currency for each profile", value: "B" },
-          { text: "Set the exchange rates for the currencies", value: "C" },
-          { text: "Define the list of currencies and make them active", value: "D" },
-          { text: "Set the validity dates for the exchange rates", value: "E" }
+          { text: "Check Data Cloud", value: "A" },
+          { text: "Use Flow Debugger", value: "B" },
+          { text: "Inspect the AI audit trail", value: "C" },
+          { text: "Enable Field History", value: "D" }
         ],
-        correctAnswer: ["A", "D", "C"],
-        explanation: "After enabling multi-currency, the corporate currency must be set, and the currencies need to be defined and activated. Exchange rates must also be set for the active currencies. 'Setting the currency for each profile' and 'setting validity dates for exchange rates' are not required for this configuration."
+        correctAnswer: "C",
+        explanation: "El audit trail muestra cómo se enmascaran datos sensibles como direcciones."
       },
       {
         id: 14,
-        text: "At United Technologies, the inbound and outbound sales teams use the same Sales app. The inbound sales team uses certain tabs that the outbound sales team doesn't need. What configuration can be done to ensure that each team, according to their respective profiles, sees only the tabs they need on the navigation bar?",
+        text: "Which other configuration steps should the AI Specialist take in the sandbox that can be deployed to production?",
         options: [
-          { text: "Create two custom apps with different tabs and apply one each to the two different profiles", value: "A" },
-          { text: "A custom app has to be developed for a personalized navigation bar", value: "B" },
-          { text: "Assign different home page layouts to each profile", value: "C" },
-          { text: "Create two custom apps with different tabs and assign one or the other to each user", value: "D" }
+          { text: "Assign permission sets", value: "A" },
+          { text: "Activate flows", value: "B" },
+          { text: "Create custom fields (Issue, Resolution, Summary), Quick Action to update them, and add Wrap Up component to Messaging Session page layout", value: "C" },
+          { text: "Enable Einstein", value: "D" }
         ],
-        correctAnswer: "A",
-        explanation: "Custom apps can be created for different tabs. Each profile can have a default app assigned to it, displaying the appropriate tabs for that profile."
+        correctAnswer: "C",
+        explanation: "Solo metadata (campos, acciones, layouts) se pueden desplegar. Asignaciones de permisos no."
       },
       {
         id: 15,
-        text: "What does the 'Default Locale' setting determine?",
+        text: "An AI Specialist has created a copilot custom action using flow and needs troubleshooting. What should the AI Specialist do?",
         options: [
-          { text: "Name format", value: "B" },
-          { text: "Format of Dates and Times", value: "A" },
-          { text: "Display format of Addresses", value: "C" },
-          { text: "Fiscal Year", value: "D" },
-          { text: "Default Currency", value: "E" }
+          { text: "Turn on dynamic debugging in Copilot Builder Dynamic Panel", value: "A" },
+          { text: "Check Setup Audit", value: "B" },
+          { text: "Use Debug Logs", value: "C" },
+          { text: "Review Event Logs", value: "D" }
         ],
-        correctAnswer: ["B", "A", "C"],
-        explanation: "The 'Default Locale' setting determines the format of dates, times, numbers, names, addresses, and phone numbers in Salesforce. The default currency for single currency orgs is set using the 'Currency Locale' field."
+        correctAnswer: "A",
+        explanation: "Dynamic debugging muestra inputs/outputs del flow en tiempo real."
       },
       {
         id: 16,
-        text: "What capability has been introduced in Lightning App Builder to enhance user experience when customizing record pages in dynamic forms-enabled pages?",
+        text: "A Salesforce AI Specialist is reviewing feedback on a prompt template. What should the AI Specialist do to ensure the prompt template's effectiveness?",
         options: [
-          { text: "Lightning App Builder introduces a new feature to automatically populate related object fields based on predefined criteria.", value: "A" },
-          { text: "Users can directly edit related object fields on the record page without navigating through the component palette.", value: "B" },
-          { text: "Lightning App Builder now provides a separate tab for cross-object fields, streamlining the process of adding related object fields to record pages.", value: "C" },
-          { text: "Users can now drill into lookup relationship fields from the component palette and access fields from related objects.", value: "D" }
+          { text: "Increase token limit", value: "A" },
+          { text: "Use the Prompt Builder Scorecard", value: "B" },
+          { text: "Change grounding", value: "C" },
+          { text: "Use external LLM", value: "D" }
         ],
-        correctAnswer: "D",
-        explanation: "In the Spring '24 release, users can drill into lookup relationship fields from the component palette and access fields from related objects, making customization easier."
+        correctAnswer: "B",
+        explanation: "Herramienta oficial para evaluar relevancia, precisión, seguridad y grounding."
       },
       {
         id: 17,
-        text: "An administrator has created many custom fields on the Account record for different departments. One page layout is needed for all profiles because some users occasionally need to reference fields used by other departments. Which feature could the administrator enable to assist users in quickly finding the information that is relevant to them?",
+        text: "How should the AI Specialist include these instructions on a new line in the prompt template?",
         options: [
-          { text: "Enable personal page layouts so users can customize the page layout", value: "A" },
-          { text: "Enable collapsible sections so users can collapse the sections that are not relevant to them", value: "B" },
-          { text: "Enable separate loading of related lists", value: "C" },
-          { text: "Enable lazy loading of the detail page", value: "D" }
+          { text: "Surround them with triple quotes (\"\"\")", value: "A" },
+          { text: "Use <br> tags", value: "B" },
+          { text: "Use \\n", value: "C" },
+          { text: "Use bullet points", value: "D" }
         ],
-        correctAnswer: "B",
-        explanation: "Enabling personal page layouts allows users to customize their layout, making it easier for them to find the information that is relevant to them without seeing unnecessary fields."
+        correctAnswer: "A",
+        explanation: "Las instrucciones entre triple comillas son interpretadas como directivas por el LLM."
       },
       {
         id: 18,
-        text: "Global Insurance has recently switched to Lightning Experience. Service Agents complain about having to wade through Performance Charts and Top Deals, instead of New Cases on the Home Page. Sales Representatives, on the other hand, refuse to accept any changes to the current Home Page. How can a Salesforce Administrator address the needs of Sales Representatives and the Service Agents?",
+        text: "Which mechanism within the Einstein Trust Layer helps to ensure that personal data is handled in compliance with data protection regulations like GDPR?",
         options: [
-          { text: "It is not possible to customize the Home Page in Lightning Experience", value: "A" },
-          { text: "Advise users that they can customize their own Home Page", value: "B" },
-          { text: "Use Visualforce to customize the Home Page to dynamically display based on profile", value: "C" },
-          { text: "Use the Lightning App Builder to customize the Home Page for different profiles", value: "D" }
+          { text: "Prompt Filtering", value: "A" },
+          { text: "Data Masking", value: "B" },
+          { text: "Toxicity Scoring", value: "C" },
+          { text: "Audit Trail", value: "D" }
         ],
-        correctAnswer: "D",
-        explanation: "The Lightning App Builder can be used to customize the Home Pages in Lightning Experience for different profiles. This ensures that the Home Page meets the specific needs of both Service Agents and Sales Representatives."
+        correctAnswer: "B",
+        explanation: "Masking protege datos sensibles antes de enviar al LLM."
       },
       {
         id: 19,
-        text: "Acme Appliances has a number of Knowledge articles that should be exposed on the company's customer service site. The articles cover four areas, namely, New Products, Customer Service, Resources, and Best Practices. What features need to be set up to allow the articles to be separated into their respective areas and viewed on the site?",
+        text: "A data scientist needs to view and manage models in Einstein Studio and create prompt templates in Prompt Builder. Which permission sets should an AI Specialist assign?",
         options: [
-          { text: "Components", value: "A" },
-          { text: "Data categories", value: "B" },
-          { text: "Chatter", value: "C" },
-          { text: "Topics", value: "D" }
+          { text: "Data Cloud Admin and Prompt Template Manager", value: "A" },
+          { text: "Prompt Template User and Data Cloud User", value: "B" },
+          { text: "Einstein Admin", value: "C" },
+          { text: "Model Builder User", value: "D" }
         ],
-        correctAnswer: ["B", "D"],
-        explanation: "Knowledge articles can be organized using data categories and topics. These can be used to filter articles on the customer service site."
+        correctAnswer: "A",
+        explanation: "Data Cloud Admin para modelos, Prompt Template Manager para crear/editar."
       },
       {
         id: 20,
-        text: "The Salesforce administrator at Cosmic Solutions has created a new Lightning app for sales reps to manage accounts, opportunities, and orders. This custom app should appear first in their App Launcher by default, replacing the old one. Additionally, the existing Sales app should no longer be visible in the App Launcher. What should the Salesforce administrator do to meet these requirements?",
+        text: "Universal Containers is very concerned about security compliance. What should the AI Specialist recommend?",
         options: [
-          { text: "Navigate to the 'App Menu' page in Setup to change the default order of apps and hide the existing Sales app in the App Launcher.", value: "A" },
-          { text: "Navigate to the 'App Launcher' page in Setup to change the default order of apps and hide the existing Sales app in the App Launcher.", value: "B" },
-          { text: "Navigate to the 'App Manager' page in Setup to change the default order of apps and hide the existing Sales app in the App Launcher.", value: "C" },
-          { text: "Click the 'App Launcher' icon to configure the default order of apps and hide the existing Sales app in the App Launcher.", value: "D" }
+          { text: "Enable Data Cloud", value: "A" },
+          { text: "Use standard LLM", value: "B" },
+          { text: "Enable audit trail in the Einstein Trust Layer", value: "C" },
+          { text: "Limit prompt length", value: "D" }
         ],
-        correctAnswer: "A",
-        explanation: "The Salesforce Administrator can navigate to the 'App Menu' page in Setup and drag the apps to change their order. They can also click 'Visible in App Launcher' or 'Hidden in App Launcher' to show or hide individual apps."
+        correctAnswer: "C",
+        explanation: "Activa logging completo de prompts y respuestas."
       },
       {
         id: 21,
-        text: "If an organization is using multi-currency and does not want the converted amount to change on closed opportunities when exchange rates are updated, which feature allows tracking of exchange rates by date?",
+        text: "Universal Containers needs its sales reps to be able to only execute prompt templates. What should an AI Specialist recommend?",
         options: [
-          { text: "Opportunity Locking", value: "A" },
-          { text: "Exchange Rate Management", value: "B" },
-          { text: "Advanced Currency Management", value: "C" },
-          { text: "Lock Exchange Rates", value: "D" }
+          { text: "Prompt Template Manager", value: "A" },
+          { text: "Data Cloud Admin", value: "B" },
+          { text: "Prompt Execute Template permission set", value: "C" },
+          { text: "Einstein User", value: "D" }
         ],
         correctAnswer: "C",
-        explanation: "Advanced Currency Management allows you to track exchange rates by date range. This feature locks the opportunity converted amount based on the closed date and applicable exchange rate."
+        explanation: "Permiso específico para ejecución sin edición."
       },
       {
         id: 22,
-        text: "A service manager usually audits several cases a day for the customer service team and has requested a capability that would allow changing the record owner of multiple cases quickly from the queue list view. What can be done to accommodate this request?",
+        text: "What should an AI Specialist consider when adding a related list on the Account object to be used in the prompt template?",
         options: [
-          { text: "Use the Mass Quick action to update status and change record owner.", value: "A" },
-          { text: "Create a custom list view, add filter for case status and share list view to specific user.", value: "B" },
-          { text: "Create a quick action that updates the owner field in a record page.", value: "C" },
-          { text: "Create a report for cases and update case owner through field editing.", value: "D" }
+          { text: "After selecting a related list, use the field picker to select fields", value: "A" },
+          { text: "All fields are included", value: "B" },
+          { text: "Only text fields", value: "C" },
+          { text: "Requires Apex", value: "D" }
         ],
         correctAnswer: "A",
-        explanation: "Mass quick actions allow updating up to 100 records from a list view or related list. The service manager can quickly change the record owner through a Mass Quick action without needing to create a new list view."
+        explanation: "El field picker permite elegir campos específicos del related list."
       },
       {
         id: 23,
-        text: "Cosmic Innovations is a US-based company, planning to start marketing and selling its products in Europe. It will not establish an office in Europe. It will be using Salesforce to record leads and manage sales opportunities. Which of the following would a data architect need to consider to ensure compliance with GDPR regulations?",
+        text: "What is the role of the large language model (LLM) in understanding intent and executing an Agent Action?",
         options: [
-          { text: "Any data collected related to European Individuals that become inactive, will need to be deleted after 3 years.", value: "A" },
-          { text: "All personal and sensitive data will need to be protected.", value: "B" },
-          { text: "All data collected related to European prospects or customers will need to be encrypted.", value: "C" },
-          { text: "A GDPR regulations will not apply as Cosmic Innovations will not establish an office in Europe.", value: "D" }
+          { text: "Identify the best matching topic and actions and correct order of execution", value: "A" },
+          { text: "Check user permissions", value: "B" },
+          { text: "Retrieve data from Data Cloud", value: "C" },
+          { text: "Generate UI", value: "D" }
         ],
-        correctAnswer: "B",
-        explanation: "GDPR applies to all data collected for EU individuals, regardless of whether the company has a physical presence in the EU. Personal and sensitive data must be classified, protected, and stored according to GDPR guidelines."
+        correctAnswer: "A",
+        explanation: "LLM interpreta intención y secuencia acciones."
       },
       {
         id: 24,
-        text: "Which of the following are found in the Company Information page?",
+        text: "Universal Containers wants to enable its sales team to use AI to suggest recommended products from its catalog. Which type of prompt template should UC use?",
         options: [
-          { text: "Total Number of Open Opportunities", value: "A" },
-          { text: "Licenses available", value: "B" },
-          { text: "Default Locale", value: "C" },
-          { text: "Storage Used", value: "D" },
-          { text: "Roles", value: "E" }
+          { text: "Field Generation", value: "A" },
+          { text: "Sales Email", value: "B" },
+          { text: "Flex prompt template", value: "C" },
+          { text: "Grounded Summary", value: "D" }
         ],
-        correctAnswer: ["C", "D", "B"],
-        explanation: "The Company Information page contains company, financial, and support information. It includes the default language, timezone, locale, as well as the storage space used and the number of licenses available."
+        correctAnswer: "C",
+        explanation: "Flex es ideal para recomendaciones dinámicas."
       },
       {
         id: 25,
-        text: "A developer of Cosmic Solutions has created a new sandbox from the company's production org of Salesforce. They are using change sets and setting up deployment connections. What setting should be selected, and in which environment, to push metadata from the new sandbox to production?",
+        text: "When a customer chat is initiated, which functionality in Salesforce provides generative AI replies or draft emails based on recommended Knowledge articles?",
         options: [
-          { text: "'Allow Inbound Changes' in production", value: "A" },
-          { text: "'Allow Outbound Changes' in sandbox", value: "B" },
-          { text: "'Allow Inbound Changes' in sandbox", value: "C" },
-          { text: "'Allow Outbound Changes' in production", value: "D" }
+          { text: "Einstein Reply Recommendations", value: "A" },
+          { text: "Einstein Service Replies", value: "B" },
+          { text: "Prompt Builder", value: "C" },
+          { text: "Agentforce", value: "D" }
         ],
-        correctAnswer: "A",
-        explanation: "Deployment connections are automatically created when a sandbox is created. For inbound change sets to be authorized in the production environment, the 'Allow Inbound Changes' option must be enabled in the production org."
+        correctAnswer: "B",
+        explanation: "Genera respuestas basadas en KB para chat y email."
       },
       {
         id: 26,
-        text: "Which of the following are correct regarding fiscal year settings?",
+        text: "Which specific use case necessitates the use of Prompt Builder?",
         options: [
-          { text: "If the fiscal year is set in accordance with the Gregorian calendar, it is recommended that custom fiscal years be utilized", value: "C" },
-          { text: "Once defined, a custom fiscal year cannot be modified", value: "D" },
-          { text: "Once enabled, custom fiscal years can no longer be disabled", value: "B" },
-          { text: "Custom fiscal years Impact forecasts, reports, and quotas", value: "E" }
-          { text: "When the fiscal year start moth is changed, quota and adjustment information is purged", value: "A" }
+          { text: "Creating a draft of a support bulletin post", value: "A" },
+          { text: "Deleting records", value: "B" },
+          { text: "Running reports", value: "C" },
+          { text: "Sending emails", value: "D" }
         ],
-        correctAnswer: ["E", "A", "B"],
-        explanation: "Fiscal years can be modified at any time, but once a custom fiscal year is enabled, it cannot be disabled. Custom fiscal year settings impact reports, quotas, and forecasts."
+        correctAnswer: "A",
+        explanation: "Prompt Builder es para drafts generativos reutilizables."
       },
       {
         id: 27,
-        text: "ABC Rentals has a financial year that begins in July and ends in June. How can the Salesforce Administrator make sure that reports and forecasts are set up to reflect this?",
+        text: "Which audit data is available using the Einstein Trust Layer?",
         options: [
-          { text: "Enable Custom Fiscal Year and set the starting month to July", value: "A" },
-          { text: "Use the Default Fiscal Year Setting in Salesforce", value: "B" },
-          { text: "It is not possible to change the fiscal year setting in Salesforce", value: "C" },
-          { text: "Use Standard Fiscal Year and set the fiscal year to start in July", value: "D" }
+          { text: "User login history", value: "A" },
+          { text: "Field changes", value: "B" },
+          { text: "Masked data and toxicity score", value: "C" },
+          { text: "Flow executions", value: "D" }
         ],
-        correctAnswer: "D",
-        explanation: "The Standard Fiscal Year can be used when an organization follows the Gregorian calendar and just needs to adjust the fiscal year start month. The Standard Fiscal Year allows the fiscal year to start in July."
+        correctAnswer: "C",
+        explanation: "Audit incluye enmascarado y puntuación de toxicidad."
       },
       {
         id: 28,
-        text: "A company in the telecommunications industry has teams of agents who are at times in the field providing technical support to major clients. The agents use a Lightning App to work with records of a custom object and are requesting to have the detail page display only the necessary actions when accessing the record using the Salesforce mobile app to improve the user experience. Which of the options below can be performed to meet the requirement?",
+        text: "What does a safety category score of 1 indicate in the Einstein Generative Toxicity Score?",
         options: [
-          { text: "Use Dynamic Actions to hide and show actions", value: "A" },
-          { text: "Set Action Visibility using the page layout editor", value: "B" },
-          { text: "Use the Lightning Mobile Page for mobile users", value: "C" },
-          { text: "Build a separate Lightning App for mobile devices", value: "D" }
+          { text: "Completely unsafe", value: "A" },
+          { text: "Safe", value: "B" },
+          { text: "Highly toxic", value: "C" },
+          { text: "Neutral", value: "D" }
         ],
-        correctAnswer: "A",
-        explanation: "Dynamic Actions are supported in the mobile app for custom and standard objects. Once Dynamic Actions is enabled on a Lightning record page in App Builder, action visibility can be set based on filters such as the field value of the record, device of the current user, and more. After Dynamic Actions has been enabled, the actions available in the highlights panel of the record page are no longer controlled from the object's page layout. Setting Action Visibility is performed in Lightning App Builder. A Lightning Mobile Page does not exist. Building a separate Lightning App for mobile devices does not help since Action Visibility is configured at the object level and not at the App level."
+        correctAnswer: "B",
+        explanation: "1 = completamente seguro, 0 = inseguro."
       },
       {
         id: 29,
-        text: "CoolRay Inc. has a division that makes eye protection equipment for winter sports. Another division also exists that specializes in fashion eyewear, and the Role assigned to users in this division is different from the other. In addition, a Lightning app has been created for each division to manage the eyewear products which are publicly visible in the org. What customization options below can help users distinguish the different apps and allow them to easily access products that belong to their division?",
+        text: "How can the admin get a response from this prompt template from within a flow?",
         options: [
-          { text: "Create sharing rules to prevent users from viewing products from another division.", value: "A" },
-          { text: "Set different brand images and colors for the two Lightning apps accordingly.", value: "B" },
-          { text: "Use planned list views for the two types of products managed by the different divisions.", value: "C" },
-          { text: "Customize the Lightning apps to be accessible based on the Role of the user.", value: "D" }
+          { text: "Use Apex", value: "A" },
+          { text: "Flow Action", value: "B" },
+          { text: "Process Builder", value: "C" },
+          { text: "Trigger", value: "D" }
         ],
-        correctAnswer: ["C", "B"],
-        explanation: "Customizing the brand image and color for each app helps users distinguish between the apps. Additionally, setting up custom list views allows filtering by product type, which makes it easier for users to access the right products based on their division."
+        correctAnswer: "B",
+        explanation: "Flow Action invoca el prompt template."
       },
       {
         id: 30,
-        text: "An administrator is considering changing the default company locale. What should the administrator consider when doing this?",
+        text: "What should UC consider when using standard Service AI Grounding?",
         options: [
-          { text: "The company locale will be used for all users, and it cannot be changed.", value: "A" },
-          { text: "The company locale is not set as the default for new users; users must set the locale on their user record when they first log in.", value: "B" },
-          { text: "The company locale is set as the default for new users but can be changed only by an administrator.", value: "C" },
-          { text: "The company locale is set as the default for new users, but any user can change their personal locale setting", value: "D" }
+          { text: "Supports all field types", value: "A" },
+          { text: "Service AI Grounding only supports String and Text Area type fields", value: "B" },
+          { text: "Requires Data Cloud", value: "C" },
+          { text: "Supports rich text", value: "D" }
         ],
-        correctAnswer: "D",
-        explanation: "New users inherit the company’s locale setting, but it can be changed by the user in 'Personal Information' or by an administrator."
+        correctAnswer: "B",
+        explanation: "Solo campos de texto son soportados."
       },
       {
         id: 31,
-        text: "A sales user has created a list view to display accounts of premium customers in Lightning Experience. He would like to share this list with a public group of co-workers. What should a Salesforce Administrator recommend to allow the co-workers to see the accounts as quickly as possible?",
+        text: "How should the AI Specialist integrate the custom LLM into Salesforce?",
         options: [
-          { text: "Use the sharing button to share the list view with the co-workers.", value: "A" },
-          { text: "Create a report that shows the accounts and share it with the co-workers.", value: "B" },
-          { text: "Export the list view to a .csv file and share it with the co-workers.", value: "C" },
-          { text: "Share the list view with the public group of co-workers from List View Controls.", value: "D" }
+          { text: "Use Prompt Builder", value: "A" },
+          { text: "Add the fine-tuned LLM in Einstein Studio Model Builder", value: "B" },
+          { text: "Use Apex", value: "C" },
+          { text: "Use Flow", value: "D" }
         ],
-        correctAnswer: "D",
-        explanation: "A list view can be shared with a public group of users by selecting 'Sharing Settings' from the List View Controls menu in Lightning Experience. It allows sharing the list view directly with users."
+        correctAnswer: "B",
+        explanation: "Model Builder es el punto de integración."
       },
       {
         id: 32,
-        text: "Cosmic Software Solutions uses Salesforce for lead management. The record page created for leads consists of several custom fields and sections. They need to be configured as individual components so that different types of users only see the fields and sections they require while maintaining one layout for the Leads object. Which feature should be used to meet this requirement?",
+        text: "What should the team use to access externally-hosted models in the Salesforce Platform?",
         options: [
-          { text: "Page Layout Editor", value: "A" },
-          { text: "Lightning Web Component", value: "B" },
-          { text: "Dynamic Forms", value: "C" }
+          { text: "Model Builder", value: "A" },
+          { text: "Prompt Builder", value: "B" },
+          { text: "Data Cloud", value: "C" },
+          { text: "Apex", value: "D" }
         ],
-        correctAnswer: "C",
-        explanation: "Using Dynamic Forms, one can shift fields and sections from their page layout to specific components within the Lightning App Builder. It provides the flexibility to show specific fields to different users and ensure the relevant data is visible."
+        correctAnswer: "A",
+        explanation: "BYO-LLM vía Model Builder."
       },
       {
         id: 33,
-        text: "ABC Company is expecting to have a very large volume of contract records with attachments. What should an administrator advise regarding storage requirements?",
+        text: "Which generative AI feature should help UC address this issue? (mejorar productividad en chats)",
         options: [
-          { text: "Both data and file storage will be used when storing contract records with attachments.", value: "A" },
-          { text: "Salesforce does not place limits on either file or data storage.", value: "B" },
-          { text: "Only data storage will be used when storing contracts with attachments.", value: "C" },
-          { text: "Only file storage will be used when storing contracts with attachments.", value: "D" }
+          { text: "Einstein Reply Recommendations", value: "A" },
+          { text: "Service Replies", value: "B" },
+          { text: "Prompt Builder", value: "C" },
+          { text: "Agentforce", value: "D" }
         ],
-        correctAnswer: "A",
-        explanation: "Data storage is used for records, while file storage is used for attachments. Both types of storage will be used when dealing with contract records that contain attachments."
+        correctAnswer: "B",
+        explanation: "Respuestas automáticas en chat."
       },
       {
         id: 34,
-        text: "Which of the following settings can be configured from the 'Company Settings' section in Setup?",
+        text: "Which Salesforce feature should a Salesforce AI Specialist recommend to address these concerns? (evitar escribir prompts repetidamente)",
         options: [
-          { text: "Fiscal Year Settings", value: "A" },
-          { text: "Business Hours", value: "B" },
-          { text: "Company Information", value: "C" },
-          { text: "Company Login Hours", value: "D" },
-          { text: "Allowed IP ranges", value: "E" }
+          { text: "Flow Builder", value: "A" },
+          { text: "Apex", value: "B" },
+          { text: "Einstein Prompt Builder and Prompt Templates", value: "C" },
+          { text: "Lightning App Builder", value: "D" }
         ],
-        correctAnswer: ["A", "C", "B"],
-        explanation: "The Company Settings page in Salesforce allows you to configure company-wide settings such as business hours, fiscal year, and company information. IP ranges and login hours are set at the profile level, not in company settings."
+        correctAnswer: "C",
+        explanation: "Reutilización de prompts."
       },
       {
         id: 35,
-        text: "Users have complained that the Account screen is taking a long time to load. What could the administrator do to address this?",
+        text: "In addition to Recipient and Sender, which object should an AI Specialist utilize for inserting merge fields into a Sales email template prompt?",
         options: [
-          { text: "Enable separate loading of related lists", value: "A" },
-          { text: "Enable quick load on the account page layout", value: "B" },
-          { text: "Enable enhanced lists", value: "C" },
-          { text: "Enable inline editing", value: "D" }
+          { text: "Opportunity", value: "A" },
+          { text: "Recipient Account", value: "B" },
+          { text: "Contact", value: "C" },
+          { text: "User", value: "D" }
         ],
-        correctAnswer: "A",
-        explanation: "Enabling separate loading of related lists will load the main record details first and then load the related lists. This will improve performance when there are many related lists."
+        correctAnswer: "B",
+        explanation: "Para datos del cliente."
       },
       {
         id: 36,
-        text: "The data architect at Cosmic Innovations is reviewing the measures in place to ensure that the Salesforce org complies with data regulations related to the protection of personal information. Which of the following considerations are valid related to identifying personal and sensitive data in Salesforce?",
+        text: "Which setting should the AI Specialist test and iterate on to ensure the action performs as expected?",
         options: [
-          { text: "A person’s name would always be considered personal data.", value: "A" },
-          { text: "An example of sensitive data is medical and insurance records related to an individual.", value: "B" },
-          { text: "An example of personal data is Name, Date of Birth, and Email address.", value: "C" },          
-          { text: "Personal data is only stored in the Contact object.", value: "D" },
-          { text: "Personal data could be stored in any standard or custom object.", value: "E" }
+          { text: "Action Name", value: "A" },
+          { text: "Action Scope", value: "B" },
+          { text: "Action Instructions", value: "C" },
+          { text: "Action Input", value: "D" }
         ],
-        correctAnswer: ["B", "D","C"],
-        explanation: "Personal data can include names and other identifiable information stored in specific Salesforce objects like Contacts. Sensitive data includes medical and insurance records, which must be protected."
+        correctAnswer: "C",
+        explanation: "Define comportamiento del LLM."
       },
       {
         id: 37,
-        text: "Sales Reps have informed their Salesforce Administrator that they would like to edit their opportunities directly inline in the list view without having to load each record individually. Which user interface settings can the Salesforce Administrator change to meet this request?",
+        text: "Which prompt template type should the AI Specialist use and which consideration should they review?",
         options: [
-          { text: "List View Edit", value: "A" },
-          { text: "Enhanced Lists", value: "B" },
-          { text: "Inline Editing", value: "C" },
-          { text: "Enhanced Editing", value: "D" }
+          { text: "Flex, merge fields", value: "A" },
+          { text: "Field Generation, and that Dynamic Fields is enabled", value: "B" },
+          { text: "Sales Email, grounding", value: "C" },
+          { text: "Summary, token limit", value: "D" }
         ],
-        correctAnswer: ["C", "B"],
-        explanation: "To enable inline editing and editing directly in a list view, both 'Inline Editing' and 'Enhanced Lists' must be enabled."
+        correctAnswer: "B",
+        explanation: "Para llenar campos con AI."
       },
       {
         id: 38,
-        text: "Which of the following are typically used for moving metadata from a developer sandbox to a test sandbox when both are affiliated with the same production org?",
+        text: "Which configuration must an AI Specialist complete for users to access generative AI-enabled fields in the Salesforce mobile app?",
         options: [
-          { text: "Unmanaged package", value: "A" },
-          { text: "Managed Package", value: "B" },
-          { text: "Change set", value: "C" },
-          { text: "XML file", value: "D" }
+          { text: "Enable mobile push", value: "A" },
+          { text: "Activate flows", value: "B" },
+          { text: "Enable Dynamic Forms on Mobile", value: "C" },
+          { text: "Assign mobile license", value: "D" }
         ],
-        correctAnswer: ["B", "C"],
-        explanation: "Change sets and managed packages are used to migrate metadata between sandboxes and production environments. Managed packages are typically used for distributing metadata."
+        correctAnswer: "C",
+        explanation: "Requerido para AI en móvil."
       },
       {
         id: 39,
-        text: "Which are valid options when moving change sets from one Salesforce environment to another?",
+        text: "What is the correct method for the AI Specialist to assign actions to an Agent?",
         options: [
-          { text: "A sandbox org and its related production org", value: "A" },
-          { text: "Any two sandboxes orgs that are related to the same production org", value: "B" },
-          { text: "A production org that is related to another production org", value: "C" },
-          { text: "One sandbox to another sandbox whether related or not", value: "D" }
+          { text: "Directly in Agent Builder", value: "A" },
+          { text: "In Copilot Builder", value: "B" },
+          { text: "Assign the action to a Topic first on Action Builder", value: "C" },
+          { text: "Via permission sets", value: "D" }
         ],
-        correctAnswer: ["A", "B"],
-        explanation: "Change sets can only be sent between orgs that are connected to the same production org, such as two sandboxes of a production org or a sandbox and its production org."
+        correctAnswer: "C",
+        explanation: "Action Builder → Topic → Agent."
       },
       {
         id: 40,
-        text: "The system administrator of Cosmic Express has created a Dynamic Forms-enabled record page for opportunities. Various sales reps who access this page have complained about the misalignment of fields. Fields in multicolumn field sections collapse upward because of a gap caused by differences in field heights. Which field section property can be enabled to ensure that the fields remain aligned horizontally with their neighbors in the same row?",
+        text: "Which option is available for the AI Specialist to choose for the custom copilot action?",
         options: [
-          { text: "Align fields horizontally", value: "A" },
-          { text: "Disable field collapse", value: "B" },
-          { text: "Align record details", value: "C" }
+          { text: "Apex", value: "A" },
+          { text: "Prompt Template", value: "B" },
+          { text: "Flows", value: "C" },
+          { text: "Lightning Component", value: "D" }
         ],
-        correctAnswer: "A",
-        explanation: "The 'Align fields horizontally' option can be enabled in the properties of a Field Section component on a Dynamic Forms-enabled page in Lightning App Builder to ensure fields stay aligned in the same row."
+        correctAnswer: "C",
+        explanation: "Única opción soportada."
       },
       {
         id: 41,
-        text: "A Salesforce Administrator is moving an app from the developer sandbox to their UAT environment. What is required to use change sets between two orgs?",
+        text: "Which feature should the AI Specialist set up to enable UC's sales team? (detectar menciones de competidores, productos, etc.)",
         options: [
-          { text: "One of the orgs is a developer edition", value: "A" },
-          { text: "One of the orgs is a developer sandbox", value: "B" },
-          { text: "The two orgs are affiliated with the same production org", value: "C" },
-          { text: "There is a deployment connection between the two orgs", value: "D" }
+          { text: "Einstein Activity Capture", value: "A" },
+          { text: "Sales Insights", value: "B" },
+          { text: "Call Insights", value: "C" },
+          { text: "Opportunity Scoring", value: "D" }
         ],
-        correctAnswer: ["C", "D"],
-        explanation: "To use change sets between two orgs: They must be affiliated with the same production org. There must be a deployment connection between them. Developer Edition orgs do not support change sets. The type of sandbox (developer, partial, full) doesn’t matter."
+        correctAnswer: "C",
+        explanation: "Detecta menciones en llamadas."
       },
       {
         id: 42,
-        text: "Sales reps in an organization need to record opportunities in USD and EUR. How can a Salesforce Administrator accomplish this?",
+        text: "Which solution should an AI Specialist implement to meet this requirement? (ingresar número de orden → resumen)",
         options: [
-          { text: "Grant the 'Multiple Currencies' permission set to the sales reps", value: "A" },
-          { text: "Enable multiple currencies for the organization in the 'Company Information' settings", value: "B" },
-          { text: "It is not possible to use multiple currencies in Salesforce", value: "C" },
-          { text: "Add the desired additional currency in the 'Manage Currencies' page", value: "D" }
+          { text: "Create a screen flow", value: "A" },
+          { text: "Use Apex trigger", value: "B" },
+          { text: "Use Process Builder", value: "C" },
+          { text: "Use Prompt Builder", value: "D" }
         ],
-        correctAnswer: ["B", "D"],
-        explanation: "To use multiple currencies: First, enable Multiple Currencies in Company Information. Then, add the specific currencies (like EUR) in Manage Currencies. This feature is enabled at the org level, not assigned via permission sets."
+        correctAnswer: "A",
+        explanation: "UX interactivo con input."
       },
       {
         id: 43,
-        text: "Users have asked for the Parent Account field to be displayed in the Search results. How can this be enabled?",
+        text: "Which API service should UC use to meet this requirement? (digest de account action plans)",
         options: [
-          { text: "Modify the Account Lookup Dialog layout to include Parent Accounts", value: "A" },
-          { text: "Modify the Account Search Results layout to include Parent Accounts", value: "B" },
-          { text: "The fields in the Account Search Results are fixed and cannot be changed", value: "C" },
-          { text: "Users can modify the fields themselves using the 'My Columns' link in the Account search results.", value: "D" }
+          { text: "REST API", value: "A" },
+          { text: "SOAP API", value: "B" },
+          { text: "Bulk API", value: "C" },
+          { text: "Streaming API", value: "D" }
         ],
-        correctAnswer: "B",
-        explanation: "The Search Results layout for the Account object can be customized via Search Layouts in Object Manager. Users cannot customize search layouts themselves, and the Lookup Dialog layout is used in different contexts (not for global search)."
+        correctAnswer: "A",
+        explanation: "Mejor para contenido generativo."
       },
       {
         id: 44,
-        text: "What is true regarding change sets?",
+        text: "Which feature in Einstein for Service should the support team use? (respuestas rápidas basadas en Knowledge)",
         options: [
-          { text: "If a change set deployment fails, the entire transaction is rolled back", value: "A" },
-          { text: "A change set can be deployed only after validation", value: "B" },
-          { text: "Change sets are always created in a sandbox organization and deployed in production", value: "C" },
-          { text: "If a change set deployment is successful, it can be rolled back as needed", value: "D" }
+          { text: "Case Classification", value: "A" },
+          { text: "Einstein Reply Recommendations", value: "B" },
+          { text: "Service Replies", value: "C" },
+          { text: "Article Suggestions", value: "D" }
         ],
-        correctAnswer: "A",
-        explanation: "Change sets are typically created in a sandbox and deployed to production, but they can also be sent the other way. If a deployment fails, the entire transaction is rolled back. Successful deployments cannot be rolled back. Validation is recommended, but not required before deployment."
+        correctAnswer: "B",
+        explanation: "Sugiere respuestas desde KB."
       },
       {
         id: 45,
-        text: "Acme Corporation is switching to Lightning Experience. The admin must create different pages to meet business needs. What pages can be created using the Lightning App Builder?",
+        text: "What does Einstein consider when generating a summary?",
         options: [
-          { text: "App Page", value: "A" },
-          { text: "Record Page", value: "B" },
-          { text: "Home Page", value: "C" },
-          { text: "List Page", value: "D" },
-          { text: "Default Landing Page", value: "E" }
+          { text: "Generation is grounded with conversation context, Knowledge articles, and cases", value: "A" },
+          { text: "Only case subject", value: "B" },
+          { text: "User profile", value: "C" },
+          { text: "Last modified date", value: "D" }
         ],
-        correctAnswer: ["A", "B", "C"],
-        explanation: "The Lightning App Builder allows creation of: App Pages (standalone pages for custom apps), Record Pages (for specific object records), Home Pages (customized home screens). Pages like 'List Page' or 'Default Landing Page' are not options in App Builder."
+        correctAnswer: "A",
+        explanation: "Grounding completo."
       },
       {
         id: 46,
-        text: "Cosmic Enterprises recently moved from using Salesforce Classic to Lightning Experience. Their agents immediately noticed the difference in the way search is handled in Lightning Experience. What are some of the key features of Einstein Search in Lightning Experience that the agents might have noticed?",
+        text: "On which AI capability should UC train the service agents? (respuestas basadas en Knowledge)",
         options: [
-          { text: "Search results are based on the most relevant records because of search personalization.", value: "A" },
-          { text: "Actions from record pages can be accessed and completed while hovering over the instant results.", value: "B" },
-          { text: "Search can be done using natural language in order to find records.", value: "E" }
+          { text: "Prompt Builder", value: "A" },
+          { text: "Knowledge Replies", value: "B" },
+          { text: "Service Replies", value: "C" },
+          { text: "Agentforce", value: "D" }
         ],
-        correctAnswer: ["A", "B", "E"],
-        explanation: "Einstein Search in Lightning Experience includes features like search personalization for relevant results, actionable instant results allowing actions from record previews, and natural language search capabilities."
+        correctAnswer: "B",
+        explanation: "Entrenar en uso de KB."
       },
       {
         id: 47,
-        text: "As part of the launch of Salesforce for the organization, the VP of Corporate Communications of OrtizLux Solutions has given the administrator the company branding guide files to incorporate into the user interface. What should the administrator do to accommodate this request?",
+        text: "What does it mean when a prompt template version is described as immutable?",
         options: [
-          { text: "An administrator can go to Themes and Branding in the User Interface settings to create a new theme.", value: "A" }
+          { text: "Can be edited", value: "A" },
+          { text: "Only latest version", value: "B" },
+          { text: "Prompt template version is activated; no further changes", value: "C" },
+          { text: "Deleted", value: "D" }
         ],
-        correctAnswer: "A",
-        explanation: "The administrator can create a new theme and upload the organization’s images and colors in the Themes and Branding section, with only one theme active at a time."
+        correctAnswer: "C",
+        explanation: "Activada = inmutable."
       },
       {
         id: 48,
-        text: "A Salesforce user has approached the Administrator informing him that she wants to hide certain tabs in the navigation bar. What should the Salesforce Administrator suggest to her?",
+        text: "How does Secure Data Retrieval ensure that only authorized users can access necessary Salesforce data?",
         options: [
-          { text: "The user should customize the navigation bar of the app.", value: "B" }
+          { text: "Uses admin profile", value: "A" },
+          { text: "Retrieves based on the user’s permissions executing the prompt", value: "B" },
+          { text: "Ignores sharing", value: "C" },
+          { text: "Uses system context", value: "D" }
         ],
         correctAnswer: "B",
-        explanation: "Users can customize the navigation bar, and there is no auto-hide feature for rarely used tabs. The administrator cannot remove or rename tabs, and creating profiles or apps is not the required solution."
+        explanation: "Respeta permisos del usuario."
+      },
+      {
+        id: 49,
+        text: "What should the AI Specialist recommend? (insights sobre usabilidad de agentes)",
+        options: [
+          { text: "Agent Analytics", value: "A" },
+          { text: "Event Logs", value: "B" },
+          { text: "AI Audit", value: "C" },
+          { text: "Debug Logs", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Métricas de uso de agentes."
+      },
+      {
+        id: 50,
+        text: "What should an AI Specialist recommend to generate this email? (marketing personalizado)",
+        options: [
+          { text: "Standard email template", value: "A" },
+          { text: "Custom sales email template which is grounded", value: "B" },
+          { text: "Flow email", value: "C" },
+          { text: "Apex email", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Grounding con datos del cliente."
+      },
+      {
+        id: 51,
+        text: "What is the importance of Action Instructions when creating a custom Agent action?",
+        options: [
+          { text: "Define input fields", value: "A" },
+          { text: "Set permissions", value: "B" },
+          { text: "Define the expected user experience", value: "C" },
+          { text: "Name the action", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Guía al LLM sobre UX."
+      },
+      {
+        id: 52,
+        text: "What is a key reason for implementing Einstein Copilot?",
+        options: [
+          { text: "Data backup", value: "A" },
+          { text: "User training", value: "B" },
+          { text: "Streamlining workflows and automating repetitive tasks", value: "C" },
+          { text: "Report generation", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Automatización central."
+      },
+      {
+        id: 53,
+        text: "Which AI capability should UC use? (respuestas de email personalizadas y basadas en Knowledge)",
+        options: [
+          { text: "Service Replies for Chat", value: "A" },
+          { text: "Einstein Service Replies for Email", value: "B" },
+          { text: "Prompt Builder", value: "C" },
+          { text: "Agentforce", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Email + KB."
+      },
+      {
+        id: 54,
+        text: "Users are complaining that they are not getting the right summary. What should the AI Specialist investigate?",
+        options: [
+          { text: "Token limit", value: "A" },
+          { text: "Review the action Instructions to ensure they are unique", value: "B" },
+          { text: "Grounding object", value: "C" },
+          { text: "LLM provider", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Instrucciones duplicadas causan confusión."
+      },
+      {
+        id: 55,
+        text: "Which prompt template type should the AI Specialist recommend? (populate dynamic form field + human in the loop)",
+        options: [
+          { text: "Flex", value: "A" },
+          { text: "Field Generation", value: "B" },
+          { text: "Sales Email", value: "C" },
+          { text: "Summary", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Llena campo con revisión humana."
+      },
+      {
+        id: 56,
+        text: "Universal Containers recently added a custom flow for processing returns. Which action should the company take?",
+        options: [
+          { text: "Activate the flow", value: "A" },
+          { text: "Assign to profile", value: "B" },
+          { text: "Assign the Run Flows permission to the Agentforce Agent user", value: "C" },
+          { text: "Deploy to production", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Permiso necesario para ejecutar flows."
+      },
+      {
+        id: 57,
+        text: "What should Universal Containers consider when deploying an Agentforce Service Agent to production?",
+        options: [
+          { text: "Only activate", value: "A" },
+          { text: "Ensure all dependencies, 75% test coverage, version management", value: "B" },
+          { text: "Assign to users", value: "C" },
+          { text: "Enable Data Cloud", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Requisitos de despliegue."
+      },
+      {
+        id: 58,
+        text: "What is true of Agentforce Testing Center?",
+        options: [
+          { text: "Consumes Einstein Requests", value: "A" },
+          { text: "Running tests does not consume Einstein Requests", value: "B" },
+          { text: "Requires production data", value: "C" },
+          { text: "Only 10 tests", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Testing gratuito."
+      },
+      {
+        id: 59,
+        text: "UC would like to efficiently test a large and repeatable number of utterances. What should the Agentforce Specialist recommend?",
+        options: [
+          { text: "Manual testing", value: "A" },
+          { text: "Use Debug Logs", value: "B" },
+          { text: "Create a CSV file with test cases in Agentforce Testing Center", value: "C" },
+          { text: "Use Flow", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Pruebas masivas."
+      },
+      {
+        id: 60,
+        text: "Agentforce Service Agent is not providing answers found in Knowledge articles. What is the likely issue?",
+        options: [
+          { text: "No grounding", value: "A" },
+          { text: "LLM not trained", value: "B" },
+          { text: "Was not given the Allow View Knowledge permission set", value: "C" },
+          { text: "Data Cloud not enabled", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Permiso de acceso a KB."
+      },
+      {
+        id: 61,
+        text: "What considerations when using Record Snapshots grounding?",
+        options: [
+          { text: "Activities such as tasks and events are excluded", value: "A" },
+          { text: "All fields included", value: "B" },
+          { text: "Email addresses included", value: "C" },
+          { text: "Rich text supported", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "No se incluyen Activities."
+      },
+      {
+        id: 62,
+        text: "Universal Containers has an active standard email prompt template. Which steps to customize?",
+        options: [
+          { text: "Edit directly", value: "A" },
+          { text: "Clone the existing template", value: "B" },
+          { text: "Deactivate first", value: "C" },
+          { text: "Use version control", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Preserva original."
+      },
+      {
+        id: 63,
+        text: "Universal Containers has grounded a prompt template with a related list. Users are not getting correct responses. What is causing this issue?",
+        options: [
+          { text: "The related list is not on the parent object’s page layout", value: "A" },
+          { text: "Too many records", value: "B" },
+          { text: "Wrong object", value: "C" },
+          { text: "Token limit", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Layout debe incluir related list."
+      },
+      {
+        id: 64,
+        text: "Which standard Agent action helps sales reps draft personalized emails?",
+        options: [
+          { text: "Agent Action: Draft of Revise Sales Email", value: "A" },
+          { text: "Summarize Record", value: "B" },
+          { text: "Find Similar", value: "C" },
+          { text: "Create Task", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Email personalizado."
+      },
+      {
+        id: 65,
+        text: "Users have reported that the case summaries generated are not returning the appropriate information. What is a possible explanation?",
+        options: [
+          { text: "Wrong LLM", value: "A" },
+          { text: "Too many fields", value: "B" },
+          { text: "The data being used for grounding is incorrect or incomplete", value: "C" },
+          { text: "User lacks permission", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Grounding defectuoso."
+      },
+      {
+        id: 66,
+        text: "Universal Containers’ AI data masking rules don’t align with privacy policies. What should an AI Specialist recommend?",
+        options: [
+          { text: "Configure data masking in the Einstein Trust Layer setup", value: "A" },
+          { text: "Use field-level security", value: "B" },
+          { text: "Enable sharing rules", value: "C" },
+          { text: "Use validation rules", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Configuración centralizada."
+      },
+      {
+        id: 67,
+        text: "Why is the preview button greyed out in a Flex prompt template?",
+        options: [
+          { text: "The records related to the prompt have not been selected", value: "A" },
+          { text: "Not activated", value: "B" },
+          { text: "No merge fields", value: "C" },
+          { text: "Wrong object", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Flex requiere contexto."
+      },
+      {
+        id: 68,
+        text: "Why random token limit errors in Field Generation prompt?",
+        options: [
+          { text: "The number of tokens generated varies by record due to dynamic content", value: "A" },
+          { text: "Fixed token limit", value: "B" },
+          { text: "Wrong field type", value: "C" },
+          { text: "No grounding", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Contenido variable."
+      },
+      {
+        id: 69,
+        text: "Which Einstein Trust Layer feature merges Salesforce record data into prompts securely?",
+        options: [
+          { text: "Dynamic grounding with secure data retrieval", value: "A" },
+          { text: "Prompt filtering", value: "B" },
+          { text: "Toxicity detection", value: "C" },
+          { text: "Audit trail", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Grounding seguro."
+      },
+      {
+        id: 70,
+        text: "How does Einstein Copilot handle user requests?",
+        options: [
+          { text: "Einstein Copilot analyzes the request and uses LLM to generate and display the response", value: "A" },
+          { text: "Uses rules engine", value: "B" },
+          { text: "Uses Apex", value: "C" },
+          { text: "Uses Flow", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "LLM directo."
+      },
+      {
+        id: 71,
+        text: "How does Einstein Trust Layer protect sensitive data in responses?",
+        options: [
+          { text: "Masked data is de-masked during the response journey", value: "A" },
+          { text: "Never unmasked", value: "B" },
+          { text: "Uses encryption", value: "C" },
+          { text: "Blocks response", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Desenmascara post-LLM."
+      },
+      {
+        id: 72,
+        text: "How to get insights on product/competitor mentions in calls?",
+        options: [
+          { text: "Enable Einstein Conversation Insights, enable sales recording, assign permission sets, customize up to 50 products", value: "A" },
+          { text: "Use reports", value: "B" },
+          { text: "Use dashboards", value: "C" },
+          { text: "Use list views", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Configuración completa."
+      },
+      {
+        id: 73,
+        text: "Which Einstein Copilot capability helps cancel flights using Knowledge articles?",
+        options: [
+          { text: "Execute tasks and answer questions using Knowledge articles", value: "A" },
+          { text: "Only answer questions", value: "B" },
+          { text: "Only execute tasks", value: "C" },
+          { text: "Generate articles", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Acción + KB."
+      },
+      {
+        id: 74,
+        text: "Where to add/update Copilot actions?",
+        options: [
+          { text: "Copilot Actions page, record page for the action, or Copilot Action Library tab", value: "A" },
+          { text: "Only in Setup", value: "B" },
+          { text: "Only in Builder", value: "C" },
+          { text: "Only via API", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Múltiples puntos de entrada."
+      },
+      {
+        id: 75,
+        text: "Reduce agent typing + post-chat field entry with which combo?",
+        options: [
+          { text: "Einstein Reply Recommendations and Case Classification", value: "A" },
+          { text: "Service Replies and Flows", value: "B" },
+          { text: "Prompt Builder and Agentforce", value: "C" },
+          { text: "Knowledge and Reports", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Auto-respuestas + campos."
+      },
+      {
+        id: 76,
+        text: "Can’t see Einstein Trust Layer in prod after Data Cloud. What to enable?",
+        options: [
+          { text: "Turn on Einstein Generative AI", value: "A" },
+          { text: "Enable Data Cloud", value: "B" },
+          { text: "Assign permissions", value: "C" },
+          { text: "Activate org", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Requerido para Trust Layer."
+      },
+      {
+        id: 77,
+        text: "One user can’t see generative AI icon on summary field. Cause?",
+        options: [
+          { text: "User lacks “Field Generative AI User” permission set", value: "A" },
+          { text: "Field not enabled", value: "B" },
+          { text: "Mobile app", value: "C" },
+          { text: "Wrong profile", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Permiso específico."
+      },
+      {
+        id: 78,
+        text: "Need to store AI audit/feedback data for reporting. Consideration?",
+        options: [
+          { text: "Storing this data requires Data Cloud to be provisioned", value: "A" },
+          { text: "Use standard objects", value: "B" },
+          { text: "Use custom objects", value: "C" },
+          { text: "Use Big Objects", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Data Cloud obligatorio."
+      },
+      {
+        id: 79,
+        text: "Which hyperparameters can be changed in Model Playground?",
+        options: [
+          { text: "Temperature, Frequency Penalty, Presence Penalty", value: "A" },
+          { text: "Learning rate", value: "B" },
+          { text: "Batch size", value: "C" },
+          { text: "Epochs", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Controles estándar."
+      },
+      {
+        id: 80,
+        text: "Best grounding for personalized sales follow-up emails?",
+        options: [
+          { text: "Ground with Record Merge Fields", value: "A" },
+          { text: "Use Knowledge articles", value: "B" },
+          { text: "Use Data Cloud", value: "C" },
+          { text: "Use external data", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Datos en tiempo real."
+      },
+      {
+        id: 81,
+        text: "Analyze calls for competitor mentions and coaching?",
+        options: [
+          { text: "Call Explorer", value: "A" },
+          { text: "Call Insights", value: "B" },
+          { text: "Conversation Insights", value: "C" },
+          { text: "Sales Insights", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Análisis profundo."
+      },
+      {
+        id: 82,
+        text: "Use external LLM in Prompt Builder?",
+        options: [
+          { text: "Use BYO-LLM functionality in Einstein Studio", value: "A" },
+          { text: "Direct integration", value: "B" },
+          { text: "Use Apex", value: "C" },
+          { text: "Use Flow", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Integración externa."
+      },
+      {
+        id: 83,
+        text: "Universal Containers wants to leverage Record Snapshots grounding. What preparations are required?",
+        options: [
+          { text: "Configure page layout of the master record type.", value: "A" },
+          { text: "Create a field set for all the fields to be grounded.", value: "B" },
+          { text: "Enable and configure dynamic form for the object.", value: "C" },
+          { text: "Activate Data Cloud", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Record Snapshots use the fields visible on the page layout; fields must be added there for inclusion."
+      },
+      {
+        id: 84,
+        text: "What considerations should an Agentforce Specialist be aware of when using Record Snapshots grounding in a prompt template?",
+        options: [
+          { text: "Activities such as tasks and events are excluded.", value: "A" },
+          { text: "Empty data is filtered out.", value: "B" },
+          { text: "Email addresses are excluded.", value: "C" },
+          { text: "All fields included", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Activities (tasks/events) are not included in Record Snapshots due to polymorphic structure."
+      },
+      {
+        id: 85,
+        text: "Coral Cloud Resorts has ambiguous terms (e.g., 'package'). Which retrieval strategy?",
+        options: [
+          { text: "Hybrid search", value: "A" },
+          { text: "Semantic only", value: "B" },
+          { text: "Keyword only", value: "C" },
+          { text: "Vector only", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Hybrid search balances keyword precision and semantic context for disambiguation."
+      },
+      {
+        id: 86,
+        text: "What does 'Enrich event logs with conversation data' enable?",
+        options: [
+          { text: "User click path", value: "A" },
+          { text: "Session data (input/response)", value: "B" },
+          { text: "Full reports", value: "C" },
+          { text: "Dashboard access", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Captures full user inputs and agent responses per session."
+      },
+      {
+        id: 87,
+        text: "UC needs sales reps to only execute prompt templates. Which permission set?",
+        options: [
+          { text: "Prompt Execute Template", value: "A" },
+          { text: "Prompt Template User", value: "B" },
+          { text: "Prompt Template Manager", value: "C" },
+          { text: "Einstein User", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Prompt Template User allows execution only, not creation/editing."
+      },
+      {
+        id: 88,
+        text: "How does Agent respond when it can't understand the request?",
+        options: [
+          { text: "Preconfigured message", value: "A" },
+          { text: "Ask to rephrase", value: "B" },
+          { text: "Error message", value: "C" },
+          { text: "Do nothing", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Default fallback is a user-friendly rephrase request."
+      },
+      {
+        id: 89,
+        text: "How to ensure deterministic action order?",
+        options: [
+          { text: "Specify LLM provider", value: "A" },
+          { text: "Use custom variables and filters", value: "B" },
+          { text: "Specify order of actions", value: "C" },
+          { text: "Use priority", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Action order is explicitly set in topic configuration."
+      },
+      {
+        id: 90,
+        text: "How to analyze user inputs, requests, queries for patterns?",
+        options: [
+          { text: "User Utterances dashboard", value: "A" },
+          { text: "Agent Event Logs", value: "B" },
+          { text: "AI Audit & Feedback", value: "C" },
+          { text: "Debug Logs", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "User Utterances dashboard is built for intent and query pattern analysis."
+      },
+      {
+        id: 91,
+        text: "Coral Cloud needs booking sequence: retrieve → verify → create. LLM executes randomly. How to fix?",
+        options: [
+          { text: "Write numbered topic instructions", value: "A" },
+          { text: "Use variables + conditional filters", value: "B" },
+          { text: "Use priority indicators", value: "C" },
+          { text: "Use Apex", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Conditional filters on variables enforce strict dependency and order."
+      },
+      {
+        id: 92,
+        text: "Creating custom action. Which setting to ensure it works?",
+        options: [
+          { text: "Action Name", value: "A" },
+          { text: "Action Input", value: "B" },
+          { text: "Action Instructions", value: "C" },
+          { text: "Action Scope", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Action Instructions define the logic and behavior of the action."
+      },
+      {
+        id: 93,
+        text: "Data scientist needs to manage models and create templates. Which permission sets?",
+        options: [
+          { text: "Prompt Template Manager + User", value: "A" },
+          { text: "Data Cloud Admin + Prompt Template Manager", value: "B" },
+          { text: "Prompt Template User + Data Cloud Admin", value: "C" },
+          { text: "Einstein Admin", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Model management requires Data Cloud Admin; template creation requires Prompt Template Manager."
+      },
+      {
+        id: 94,
+        text: "Purpose of filters in custom retriever?",
+        options: [
+          { text: "Narrow results with up to 10 field conditions", value: "A" },
+          { text: "Encrypt sensitive fields", value: "B" },
+          { text: "Aggregate documents into summary", value: "C" },
+          { text: "Index data", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Filters refine retrieval with up to 10 field-based conditions."
+      },
+      {
+        id: 95,
+        text: "UC wants support agents to use Agentforce to ask questions about product tutorials and guides. What to do?",
+        options: [
+          { text: "Create prompt template", value: "A" },
+          { text: "Add custom field", value: "B" },
+          { text: "Publish as Knowledge articles", value: "C" },
+          { text: "Use Data Cloud", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Knowledge articles are required for grounding in “Answer Questions with Knowledge”."
+      },
+      {
+        id: 96,
+        text: "UC wants to restrict indexing to public Knowledge articles and show sources. Which settings?",
+        options: [
+          { text: "Use Data Categories", value: "A" },
+          { text: "Enable Use Public Knowledge Article only", value: "B" },
+          { text: "Enable Use Public + Show sources", value: "C" },
+          { text: "Use filters", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Both settings are in Data Library → Knowledge Settings."
+      },
+      {
+        id: 97,
+        text: "To ensure empathetic responses in complaint drafting, what to include in prompt?",
+        options: [
+          { text: "Role-play instruction", value: "A" },
+          { text: "List of keywords", value: "B" },
+          { text: "Full customer history", value: "C" },
+          { text: "Token limit", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Role instruction (e.g., “You are an empathetic agent”) sets tone effectively."
+      },
+      {
+        id: 98,
+        text: "UC wants marketing team to find campaign data, generate content, manage tasks in Salesforce. Which agent?",
+        options: [
+          { text: "Sales Coach Agent", value: "A" },
+          { text: "Service Agent", value: "B" },
+          { text: "Employee Agent", value: "C" },
+          { text: "SDR Agent", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Employee Agent supports internal productivity across teams like marketing."
+      },
+      {
+        id: 99,
+        text: "Preview button greyed out in Flex prompt template. Why?",
+        options: [
+          { text: "No related records selected", value: "A" },
+          { text: "Not saved/activated", value: "B" },
+          { text: "No merge field", value: "C" },
+          { text: "Wrong object", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Flex templates require a record context to preview."
+      },
+      {
+        id: 100,
+        text: "How to enable Sales Email prompt templates for sales team?",
+        options: [
+          { text: "Assign Prompt Template User + enable Sales Emails", value: "A" },
+          { text: "Assign Manager + enable", value: "B" },
+          { text: "Assign Data Cloud Admin", value: "C" },
+          { text: "Use Apex", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Prompt Template User for execution; enable feature in Setup."
+      },
+      {
+        id: 101,
+        text: "Valid use case for Data Cloud retrievers?",
+        options: [
+          { text: "Return relevant data from vector DB", value: "A" },
+          { text: "Ground external websites", value: "B" },
+          { text: "Modify source systems", value: "C" },
+          { text: "Send emails", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Retrievers fetch indexed data for RAG grounding."
+      },
+      {
+        id: 102,
+        text: "What is automatically created with a custom search index in Data Cloud?",
+        options: [
+          { text: "Retriever with same name", value: "A" },
+          { text: "Dynamic retriever", value: "B" },
+          { text: "Apex retriever class", value: "C" },
+          { text: "Flow retriever", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "A retriever is auto-created with the index name."
+      },
+      {
+        id: 103,
+        text: "AI data masking rules don’t align with policy. What to do?",
+        options: [
+          { text: "Enable in sandbox", value: "A" },
+          { text: "Configure in Einstein Trust Layer", value: "B" },
+          { text: "Add in LLM setup", value: "C" },
+          { text: "Use field security", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Data masking is configured in Einstein Trust Layer."
+      },
+      {
+        id: 104,
+        text: "UC needs insights on agent usability and adoption. Recommend:",
+        options: [
+          { text: "Agent Analytics", value: "A" },
+          { text: "Agentforce Analytics", value: "B" },
+          { text: "Agent Studio Analytics", value: "C" },
+          { text: "Event Logs", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Agentforce Analytics provides adoption and usage dashboards."
+      },
+      {
+        id: 105,
+        text: "UC has 1000s of leads from trade show. Wants 24/7 qualification, answers, booking. Which agent?",
+        options: [
+          { text: "SDR Agent", value: "A" },
+          { text: "Sales Coach", value: "B" },
+          { text: "Commerce Agent", value: "C" },
+          { text: "Service Agent", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "SDR Agent qualifies, nurtures, and books meetings autonomously."
+      },
+      {
+        id: 106,
+        text: "UC gets irrelevant results from old product docs. How to fix?",
+        options: [
+          { text: "Delete old docs", value: "A" },
+          { text: "Create custom retriever with filters", value: "B" },
+          { text: "Use default retriever", value: "C" },
+          { text: "Increase index size", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Apply filters (e.g., date, product) in custom retriever."
+      },
+      {
+        id: 107,
+        text: "UC wants to test agents with real data, isolated from prod. Which environment?",
+        options: [
+          { text: "Developer org", value: "A" },
+          { text: "Production", value: "B" },
+          { text: "Sandbox replicated from prod", value: "C" },
+          { text: "Scratch org", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Sandbox with production data replica ensures safe, realistic testing."
+      },
+      {
+        id: 108,
+        text: "Prompt Builder limitation:",
+        options: [
+          { text: "Rich text only in Flex", value: "A" },
+          { text: "Changes not in Setup Audit Trail", value: "B" },
+          { text: "Custom objects only in Flex", value: "C" },
+          { text: "No version control", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Prompt template changes are not logged in Setup Audit Trail."
+      },
+      {
+        id: 109,
+        text: "Agent fails in prod after change set deploy. Flow exists but not running. Cause?",
+        options: [
+          { text: "Flow not activated", value: "A" },
+          { text: "User lacks permission", value: "B" },
+          { text: "Apex not included", value: "C" },
+          { text: "Wrong version", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Flows deployed via change set are inactive by default."
+      },
+      {
+        id: 110,
+        text: "Agent not grounding Knowledge in Agent Builder/Experience but works in Prompt Builder. Fix?",
+        options: [
+          { text: "Give agent Manage Knowledge", value: "A" },
+          { text: "Check prompt access", value: "B" },
+          { text: "Assign Data Cloud User to Agentforce Service Agent User", value: "C" },
+          { text: "Enable Data Library", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Agent runtime user needs Data Cloud access for Data Library."
+      },
+      {
+        id: 111,
+        text: "Role of LLM in intent and action execution?",
+        options: [
+          { text: "Find similar topics", value: "A" },
+          { text: "Match topic + actions + order", value: "B" },
+          { text: "Check user access", value: "C" },
+          { text: "Generate UI", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "LLM matches intent to topic, selects actions, and determines execution order."
+      },
+      {
+        id: 112,
+        text: "UC wants to limit “Answer Questions with Knowledge” to specific articles. How?",
+        options: [
+          { text: "List titles in scope", value: "A" },
+          { text: "Filter retriever on custom field", value: "B" },
+          { text: "Use Data Categories + filters in Data Library", value: "C" },
+          { text: "Use Apex", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Data Categories + Data Library filters control article access."
+      },
+      {
+        id: 113,
+        text: "How to access Data Cloud data in Prompt Builder for summary?",
+        options: [
+          { text: "DMOs in Flex + related lists + flows", value: "A" },
+          { text: "Related lists + prompt-initiated flows", value: "B" },
+          { text: "External APIs only", value: "C" },
+          { text: "Direct DMO access", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Native methods: related lists and flows; no direct DMO access."
+      },
+      {
+        id: 114,
+        text: "Sales reps want to say “Show me other opportunities like this one.” How?",
+        options: [
+          { text: "Use standard Agent action", value: "A" },
+          { text: "Custom action with flow", value: "B" },
+          { text: "Custom action with Apex", value: "C" },
+          { text: "Use report", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Standard action “Find Similar Opportunities” supports this utterance."
+      },
+      {
+        id: 115,
+        text: "UC wants AI agent to use proprietary PDF policy docs, grounded responses. First step?",
+        options: [
+          { text: "Set up Data Library", value: "A" },
+          { text: "Expand scope to all records", value: "B" },
+          { text: "Add files to content", value: "C" },
+          { text: "Use external API", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Data Library ingests and indexes PDFs for RAG grounding."
+      },
+      {
+        id: 116,
+        text: "UC wants to fine-tune model with company data. Recommend:",
+        options: [
+          { text: "Adjust temperature", value: "A" },
+          { text: "Connect external model via Einstein Studio", value: "B" },
+          { text: "Change frequency penalty", value: "C" },
+          { text: "Use standard LLM", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Only Einstein Studio supports fine-tuning with proprietary data."
+      },
+      {
+        id: 117,
+        text: "What does toxicity score of 1 mean?",
+        options: [
+          { text: "Least toxic", value: "A" },
+          { text: "Not toxic", value: "B" },
+          { text: "Most toxic", value: "C" },
+          { text: "Neutral", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Scale 0–1; 1 = highest toxicity."
+      },
+      {
+        id: 118,
+        text: "How to validate masked fields in Einstein Trust Layer?",
+        options: [
+          { text: "Flow Debugger", value: "A" },
+          { text: "Request AI Audit Data", value: "B" },
+          { text: "Enable audit collection", value: "C" },
+          { text: "Check Setup", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Audit data shows before/after masking."
+      },
+      {
+        id: 119,
+        text: "UC uses external REST API in prompt flow. How to use response as merge field?",
+        options: [
+          { text: "Use External Service Record merge fields", value: "A" },
+          { text: "Convert JSON to XML", value: "B" },
+          { text: "Use Add Prompt Instructions", value: "C" },
+          { text: "Use Apex", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "External Service Records expose API response as merge fields."
+      },
+      {
+        id: 120,
+        text: "Topic selected correctly, but action is not. What to test?",
+        options: [
+          { text: "Action Scope", value: "A" },
+          { text: "Action Instructions", value: "B" },
+          { text: "Classification Description", value: "C" },
+          { text: "Action Name", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Action Instructions guide LLM on when/how to trigger action."
+      },
+      {
+        id: 121,
+        text: "Cloud Kicks wants to integrate agent with custom website. Which framework?",
+        options: [
+          { text: "Agent-to-Agent (A2A)", value: "A" },
+          { text: "Model Context Protocol (MCP)", value: "B" },
+          { text: "Agent API", value: "C" },
+          { text: "Einstein API", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Agent API enables external chat integration."
+      },
+      {
+        id: 122,
+        text: "In Knowledge-based data library, difference between identifying and content fields?",
+        options: [
+          { text: "Identifying = locate, content = enrich", value: "A" },
+          { text: "Identifying = indexing, content = summary", value: "B" },
+          { text: "Identifying = relevance, content = full text", value: "C" },
+          { text: "Identifying = title, content = body", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Identifying fields find the article; content fields provide response data."
+      },
+      {
+        id: 123,
+        text: "Account manager wants snapshot of accounts, contacts, leads, opportunities. Which feature?",
+        options: [
+          { text: "Sales Summaries", value: "A" },
+          { text: "Sales Insight Summary", value: "B" },
+          { text: "Work Summaries", value: "C" },
+          { text: "Record Summary", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Sales Insight Summary aggregates multi-object data."
+      },
+      {
+        id: 124,
+        text: "Hotel wants guest summary with recommendations only on Contact page. Which AI tool?",
+        options: [
+          { text: "Model Builder", value: "A" },
+          { text: "Agent Builder", value: "B" },
+          { text: "Prompt Builder", value: "C" },
+          { text: "Data Cloud", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Prompt Builder + Lightning component embeds on record page."
+      },
+      {
+        id: 125,
+        text: "Key reason to implement Agentforce?",
+        options: [
+          { text: "Data entry", value: "A" },
+          { text: "AI without user interaction", value: "B" },
+          { text: "Streamline workflows and automate tasks", value: "C" },
+          { text: "Report generation", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Core value is workflow automation and task execution."
+      },
+      {
+        id: 126,
+        text: "Agent Action includes Apex classes. Deployment consideration?",
+        options: [
+          { text: "75% coverage + dependencies", value: "A" },
+          { text: "Can deploy <75% if not activated", value: "B" },
+          { text: "Bypass 75% if agent-only", value: "C" },
+          { text: "No testing needed", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Standard Apex rules apply regardless of agent use."
+      },
+      {
+        id: 127,
+        text: "UC wants to test many utterances without modifying CRM data. What to do?",
+        options: [
+          { text: "Run in production", value: "A" },
+          { text: "Limit to 50", value: "B" },
+          { text: "Use sandbox", value: "C" },
+          { text: "Use scratch org", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Sandbox isolates data changes during testing."
+      },
+      {
+        id: 128,
+        text: "UC wants product/competitor mentions in calls. How?",
+        options: [
+          { text: "Enable ECI, connect provider, assign perms, customize 25 items", value: "A" },
+          { text: "Enable ECI, define managers, 50 competitors", value: "B" },
+          { text: "Enable ECI, enable recording, 50 products", value: "C" },
+          { text: "Use reports", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Requires provider; 25-item limit per type."
+      },
+      {
+        id: 129,
+        text: "Reviewing feedback on prompt template. What to do?",
+        options: [
+          { text: "Monitor and refine", value: "A" },
+          { text: "Use Prompt Builder Scorecard", value: "B" },
+          { text: "Change grounding object", value: "C" },
+          { text: "Increase tokens", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Scorecard is official evaluation tool."
+      },
+      {
+        id: 130,
+        text: "Using related lists from Account in prompt. What to consider?",
+        options: [
+          { text: "Text encoding", value: "A" },
+          { text: "Max number of merge fields", value: "B" },
+          { text: "XML vs JSON", value: "C" },
+          { text: "Field types", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Merge field limits apply to related lists."
+      },
+      {
+        id: 131,
+        text: "Cloud Kicks deploys prompt with custom LLM from sandbox to prod. Error. Cause?",
+        options: [
+          { text: "Prompt doesn’t specify custom LLM", value: "A" },
+          { text: "BYOLLM not supported in prod", value: "B" },
+          { text: "LLM name doesn’t match", value: "C" },
+          { text: "Wrong version", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "LLM must exist with same name and ID in target org."
+      },
+      {
+        id: 132,
+        text: "UC uses Call Explorer. What to know before enabling?",
+        options: [
+          { text: "Independent of Knowledge", value: "A" },
+          { text: "Custom actions needed", value: "B" },
+          { text: "Requires Einstein Conversation Insights permission set", value: "C" },
+          { text: "Requires Data Cloud", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Permission set is required for access."
+      },
+      {
+        id: 133,
+        text: "Standard Copilot action to draft emails from past successful ones?",
+        options: [
+          { text: "Find Similar Opportunities", value: "A" },
+          { text: "Draft or Revise Sales Email", value: "B" },
+          { text: "Summarize Record", value: "C" },
+          { text: "Create Task", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Uses historical email data for personalization."
+      },
+      {
+        id: 134,
+        text: "Prompt template version is immutable means:",
+        options: [
+          { text: "Activated; no changes", value: "A" },
+          { text: "Only latest can be activated", value: "B" },
+          { text: "Every change = new version", value: "C" },
+          { text: "Can be deleted", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Activated versions are locked."
+      },
+      {
+        id: 135,
+        text: "UC building no-code. Wants prep for sales calls with summaries from CRM, Data Cloud, transcripts. Recommend:",
+        options: [
+          { text: "Prompt template grounded on CRM + Data Cloud", value: "A" },
+          { text: "Fine-tune model", value: "B" },
+          { text: "Deploy custom model", value: "C" },
+          { text: "Use Apex", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "No-code grounding with standard model is sufficient."
+      },
+      {
+        id: 136,
+        text: "CSR needs to cancel flights due to weather and review Knowledge. Which capability?",
+        options: [
+          { text: "Invoke flow to create article", value: "A" },
+          { text: "Execute tasks + answer from Knowledge", value: "B" },
+          { text: "Generate new article", value: "C" },
+          { text: "Only answer questions", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Combines action execution and Knowledge grounding."
+      },
+      {
+        id: 137,
+        text: "Agentforce reasoning engine chooses topic using:",
+        options: [
+          { text: "Name + Description", value: "A" },
+          { text: "Name + Scope", value: "B" },
+          { text: "Description + Scope", value: "C" },
+          { text: "Only Name", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Classification Description and Scope drive intent matching."
+      },
+      {
+        id: 138,
+        text: "When chat starts, which provides generative replies from Knowledge?",
+        options: [
+          { text: "Einstein Reply Recommendations", value: "A" },
+          { text: "Einstein Service Replies", value: "B" },
+          { text: "Einstein Grounding", value: "C" },
+          { text: "Prompt Builder", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Einstein Service Replies generates AI drafts from Knowledge."
+      },
+      {
+        id: 139,
+        text: "UC wants to use external foundational model. Which requirement?",
+        options: [
+          { text: "Fine-tune temperature", value: "A" },
+          { text: "Fine-tune with company data", value: "B" },
+          { text: "Change frequency penalty", value: "C" },
+          { text: "Use standard model", value: "D" }
+        ],
+        correctAnswer: "B",
+        explanation: "Only fine-tuning with proprietary data requires external model via Einstein Studio."
+      },
+      {
+        id: 140,
+        text: "Sales reps draft personalized emails from past comms. Which action?",
+        options: [
+          { text: "Summarize Record", value: "A" },
+          { text: "Find Similar Opportunities", value: "B" },
+          { text: "Draft or Revise Sales Email", value: "C" },
+          { text: "Create Task", value: "D" }
+        ],
+        correctAnswer: "C",
+        explanation: "Uses past successful emails for personalization."
+      },
+      {
+        id: 141,
+        text: "Prompt template version immutable means:",
+        options: [
+          { text: "No changes after activation", value: "A" },
+          { text: "Only latest activatable", value: "B" },
+          { text: "Auto new version on edit", value: "C" },
+          { text: "Can be deleted", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Activated = locked from edits."
+      },
+      {
+        id: 142,
+        text: "Agent Action with Apex. Deployment rule?",
+        options: [
+          { text: "75% coverage + dependencies", value: "A" },
+          { text: "<75% if not activated", value: "B" },
+          { text: "Bypass if agent-only", value: "C" },
+          { text: "No testing needed", value: "D" }
+        ],
+        correctAnswer: "A",
+        explanation: "Standard Apex deployment rules apply."
       }
     ];
 
@@ -597,21 +1726,17 @@
       const [score, setScore] = React.useState(0);
       const [shuffledQuestions, setShuffledQuestions] = React.useState([]);
 
-      // Mezclar preguntas al montar el componente
       React.useEffect(() => {
         try {
           const shuffled = [...questions].sort(() => Math.random() - 0.5);
           setShuffledQuestions(shuffled);
-          console.log("Questions shuffled successfully:", shuffled.length);
         } catch (error) {
           console.error("Error shuffling questions:", error);
         }
       }, []);
 
-      // Definir currentQuestion
       const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
-      // Handle answer selection
       const handleAnswerSelect = (value) => {
         try {
           if (Array.isArray(currentQuestion?.correctAnswer)) {
@@ -628,7 +1753,6 @@
         }
       };
 
-      // Handle submit
       const handleSubmit = () => {
         try {
           if (!currentQuestion) return;
@@ -650,7 +1774,6 @@
         }
       };
 
-      // Handle next question
       const handleNextQuestion = () => {
         try {
           setSelectedAnswers([]);
@@ -661,7 +1784,6 @@
         }
       };
 
-      // Determine selection message
       const getSelectionMessage = () => {
         if (!currentQuestion) return "";
         return Array.isArray(currentQuestion.correctAnswer)
@@ -669,14 +1791,13 @@
           : "Selecciona 1 opción";
       };
 
-      // Handle loading state
       if (shuffledQuestions.length === 0 || !currentQuestion) {
         return <p className="text-center text-gray-500">Cargando preguntas...</p>;
       }
 
       return (
         <div className="bg-white p-6 rounded-lg shadow-lg max-w-2xl w-full">
-          <h1 className="text-2xl font-bold mb-4 text-center">Cuestionario Salesforce Administrator</h1>
+          <h1 className="text-2xl font-bold mb-4 text-center">Cuestionario Salesforce AI Specialist</h1>
           <p className="text-lg mb-2">
             Pregunta {currentQuestionIndex + 1} de {shuffledQuestions.length}
           </p>
@@ -764,7 +1885,6 @@
       );
     };
 
-    // Renderizar la aplicación
     try {
       const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(<QuizApp />);
