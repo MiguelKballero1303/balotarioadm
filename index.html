@@ -1716,1327 +1716,1327 @@
         ],
         correctAnswer: "A",
         explanation: "Standard Apex deployment rules apply."
-      }
+      },
       {
-    "id": 144,
-    "text": "What does a toxicity score of 1 indicate in Einstein Trust Layer?",
-    "options": [
-      { "text": "Unsafe content detected", "value": "A" },
-      { "text": "Safe content", "value": "B" },
-      { "text": "Neutral content", "value": "C" },
-      { "text": "Requires manual review", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Score ranges 0 (unsafe) to 1 (safe). 1 = fully safe. Ref: Einstein Trust Layer Documentation"
-  },
-  {
-    "id": 145,
-    "text": "Agent ignores PDF attachments in Knowledge articles. How to fix?",
-    "options": [
-      { "text": "Update agent permissions", "value": "A" },
-      { "text": "Reindex Knowledge articles", "value": "B" },
-      { "text": "Enable ‘Include Attachments’ + ContentDocumentVersion UDMO", "value": "C" },
-      { "text": "Switch to hybrid search", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Use ContentDocumentVersion UDMO to extract and index attachment content. Ref: AgentForce Data Cloud Indexing Guide"
-  },
-  {
-    "id": 146,
-    "text": "Agent hallucinates weblinks. How to debug?",
-    "options": [
-      { "text": "Increase token limit", "value": "A" },
-      { "text": "Examine prompt instructions and resolved chunks", "value": "B" },
-      { "text": "Disable grounding", "value": "C" },
-      { "text": "Use a different LLM", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Inspect resolved prompt and retrieved chunks to trace hallucination source. Ref: AgentForce Troubleshooting Guide"
-  },
-  {
-    "id": 147,
-    "text": "Custom action calls a flow. What about running user’s data access?",
-    "options": [
-      { "text": "System context overrides permissions", "value": "A" },
-      { "text": "Flow respects running user’s permissions", "value": "B" },
-      { "text": "No access restrictions apply", "value": "C" },
-      { "text": "Requires admin permissions", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Flows respect user permissions unless set to system context. Ref: Salesforce Flow Runtime Security"
-  },
-  {
-    "id": 148,
-    "text": "Analyze user inputs and queries for patterns. Which dashboard?",
-    "options": [
-      { "text": "User Utterances dashboard", "value": "A" },
-      { "text": "Agent Performance dashboard", "value": "B" },
-      { "text": "Data Cloud Insights", "value": "C" },
-      { "text": "Conversation Insights", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "User Utterances dashboard shows raw user inputs for intent analysis. Ref: Einstein Agentforce Specialist Guide"
-  },
-  {
-    "id": 149,
-    "text": "Modified data masking fields. Next step?",
-    "options": [
-      { "text": "Reindex Data Library", "value": "A" },
-      { "text": "Test prompt responses with masked data", "value": "B" },
-      { "text": "Update retriever filters", "value": "C" },
-      { "text": "Deploy to production", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Always test AI output quality after masking changes. Ref: Einstein Trust Layer Overview"
-  },
-  {
-    "id": 150,
-    "text": "Connect Employee Agent to Slack channel. What step?",
-    "options": [
-      { "text": "Create Salesforce-Slack connection", "value": "A" },
-      { "text": "Enable Slack in Data Cloud", "value": "B" },
-      { "text": "Assign Slack permission set", "value": "C" },
-      { "text": "Configure prompt template", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "First, connect Salesforce org to Slack workspace. Ref: AgentForce for Slack Integration Guide"
-  },
-  {
-    "id": 151,
-    "text": "Exact match on policy clause numbers. Which search type?",
-    "options": [
-      { "text": "Keyword search", "value": "A" },
-      { "text": "Semantic search", "value": "B" },
-      { "text": "Hybrid search", "value": "C" },
-      { "text": "Vector search", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Keyword search ensures exact, deterministic matches. Ref: AgentForce Search Optimization Guide"
-  },
-  {
-    "id": 152,
-    "text": "After saving Data Library, what is created in Data Cloud?",
-    "options": [
-      { "text": "Data stream only", "value": "A" },
-      { "text": "Search index only", "value": "B" },
-      { "text": "Data stream, search index, retriever", "value": "C" },
-      { "text": "Retriever only", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Auto-creates stream → index → retriever. Ref: Salesforce AI Specialist Material"
-  },
-  {
-    "id": 153,
-    "text": "Deploy Agentforce from Sales to Service. Key consideration?",
-    "options": [
-      { "text": "Copy all Sales prompts", "value": "A" },
-      { "text": "Rebuild agent from scratch", "value": "B" },
-      { "text": "Review/test topics and actions for Service use cases", "value": "C" },
-      { "text": "Use same permission sets", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Topics and actions are context-specific. Ref: Salesforce Help: Einstein Agent Setup"
-  },
-  {
-    "id": 154,
-    "text": "Valid use case for Agentforce Sales Agent?",
-    "options": [
-      { "text": "Natural language tasks with policy enforcement", "value": "A" },
-      { "text": "Automated code generation", "value": "B" },
-      { "text": "Financial forecasting", "value": "C" },
-      { "text": "Inventory management", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Conversational task execution with grounding. Ref: Agentforce for Sales Use Cases"
-  },
-  {
-    "id": 155,
-    "text": "Custom action not in correct order. Fix?",
-    "options": [
-      { "text": "Specify dependent actions by API name", "value": "A" },
-      { "text": "Increase token limit", "value": "B" },
-      { "text": "Rebuild action in Flow", "value": "C" },
-      { "text": "Change LLM model", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Planner uses dependencies for execution order. Ref: Einstein Bot Developer Guide"
-  },
-  {
-    "id": 156,
-    "text": "Ground email on Opportunity Products, Events, Tone. How?",
-    "options": [
-      { "text": "Prompt-initiated flow", "value": "A" },
-      { "text": "Custom Apex class", "value": "B" },
-      { "text": "Static merge fields", "value": "C" },
-      { "text": "External API call", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Use flow to fetch dynamic data before prompt. Ref: Salesforce Flow + Prompt Integration"
-  },
-  {
-    "id": 157,
-    "text": "Detailed product description from latest data. Template?",
-    "options": [
-      { "text": "Flex template", "value": "A" },
-      { "text": "Record Summary", "value": "B" },
-      { "text": "Field Generation", "value": "C" },
-      { "text": "Email Configuration", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Record Summary pulls latest record data. Ref: Prompt Template Types"
-  },
-  {
-    "id": 158,
-    "text": "Best prompt for case summary (5 sentences, plain language)?",
-    "options": [
-      { "text": "Role + Task + Context + Constraints + Format", "value": "A" },
-      { "text": "Freeform text prompt", "value": "B" },
-      { "text": "Keyword-based prompt", "value": "C" },
-      { "text": "Static template", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Follows RTCCF best practice model. Ref: Prompt Builder Design Guide"
-  },
-  {
-    "id": 159,
-    "text": "Reduce retriever latency. Prioritize?",
-    "options": [
-      { "text": "Increase token limit", "value": "A" },
-      { "text": "Define efficient filters", "value": "B" },
-      { "text": "Switch to keyword search", "value": "C" },
-      { "text": "Use larger LLM", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Filters narrow search scope → faster retrieval. Ref: Salesforce AI Specialist Material"
-  },
-  {
-    "id": 160,
-    "text": "DLO for full agent session (multiple interactions)?",
-    "options": [
-      { "text": "AlAgentInteraction", "value": "A" },
-      { "text": "AlAgentRecord", "value": "B" },
-      { "text": "AlAgentSession", "value": "C" },
-      { "text": "AlAgentTransaction", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Parent container for entire session. Ref: AgentForce Data Cloud Reporting Guide"
-  },
-  {
-    "id": 161,
-    "text": "Secure customer ID across agent handoffs (no LLM access).",
-    "options": [
-      { "text": "Use merge fields", "value": "A" },
-      { "text": "Enable data masking", "value": "B" },
-      { "text": "Agent API + read-only context variable", "value": "C" },
-      { "text": "Custom Apex class", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Context variables via API are immutable and secure. Ref: AgentForce API Security Guide"
-  },
-  {
-    "id": 162,
-    "text": "Enable Agentforce in Slack. Key steps?",
-    "options": [
-      { "text": "Assign Slack permission set", "value": "A" },
-      { "text": "Create Slack channel", "value": "B" },
-      { "text": "Configure connection → install → assign access", "value": "C" },
-      { "text": "Enable Slack in Data Cloud", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Official 3-step process. Ref: AgentForce for Slack Guide"
-  },
-  {
-    "id": 163,
-    "text": "Best practice for standard LLM in Prompt Builder?",
-    "options": [
-      { "text": "Use maximum tokens", "value": "A" },
-      { "text": "Role-play as character", "value": "B" },
-      { "text": "Disable grounding", "value": "C" },
-      { "text": "Use static prompts", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Role sets tone and context. Ref: Prompt Builder Best Practices"
-  },
-  {
-    "id": 164,
-    "text": "SDR Agent access to NA leads only. How?",
-    "options": [
-      { "text": "Profile-based permissions", "value": "A" },
-      { "text": "Role hierarchy", "value": "B" },
-      { "text": "Criteria-based sharing rule", "value": "C" },
-      { "text": "Manual record assignment", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Least privilege + regional access. Ref: AgentForce Security Guide"
-  },
-  {
-    "id": 165,
-    "text": "Connect email template to Service Agent. How?",
-    "options": [
-      { "text": "Create Email Configuration", "value": "A" },
-      { "text": "Use Flow Builder", "value": "B" },
-      { "text": "Enable merge fields", "value": "C" },
-      { "text": "Update Data Library", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Email Config links template to agent. Ref: AgentForce for Service Guide"
-  },
-  {
-    "id": 166,
-    "text": "Field Generation: Sparkle icon missing. Missed step?",
-    "options": [
-      { "text": "Enable Field Generation", "value": "A" },
-      { "text": "Assign permissions", "value": "B" },
-      { "text": "Associate field to prompt on page layout", "value": "C" },
-      { "text": "Create custom field", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Must link field to template on layout. Ref: Field Generation Setup"
-  },
-  {
-    "id": 167,
-    "text": "Customize standard case summary. How?",
-    "options": [
-      { "text": "Create custom Record Summary template", "value": "A" },
-      { "text": "Modify default template", "value": "B" },
-      { "text": "Use Flex template", "value": "C" },
-      { "text": "Enable hybrid search", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Clone or create new custom template. Ref: Prompt Builder Customization"
-  },
-  {
-    "id": 168,
-    "text": "Call prompt from LWC. Template type?",
-    "options": [
-      { "text": "Record Summary", "value": "A" },
-      { "text": "Field Generation", "value": "B" },
-      { "text": "Flex", "value": "C" },
-      { "text": "Email Configuration", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Flex supports API/LWC invocation. Ref: AgentForce Developer Guide"
-  },
-  {
-    "id": 169,
-    "text": "Escalate from AI to human queue. Tool?",
-    "options": [
-      { "text": "Outbound Omni-Channel Flow", "value": "A" },
-      { "text": "Custom Apex class", "value": "B" },
-      { "text": "Data Cloud trigger", "value": "C" },
-      { "text": "Prompt Builder", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Routes to queue with skills/priority. Ref: Agentforce + Omni-Channel"
-  },
-  {
-    "id": 170,
-    "text": "Junior reps need objection handling practice. Solution?",
-    "options": [
-      { "text": "Prompt Builder", "value": "A" },
-      { "text": "Data Cloud Insights", "value": "B" },
-      { "text": "Sales Coach", "value": "C" },
-      { "text": "Testing Center", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Simulates conversations with feedback. Ref: AgentForce Sales Enablement"
-  },
-  {
-    "id": 171,
-    "text": "How does Agentforce pick the right action?",
-    "options": [
-      { "text": "Static rule-based selection", "value": "A" },
-      { "text": "LLM selects topic/action; answers if no match", "value": "B" },
-      { "text": "Random action assignment", "value": "C" },
-      { "text": "Manual user selection", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "LLM-driven with fallback. Ref: AgentForce Reasoning Flow"
-  },
-  {
-    "id": 172,
-    "text": "Persist dietary preferences across session. How?",
-    "options": [
-      { "text": "Use merge fields", "value": "A" },
-      { "text": "Enable data masking", "value": "B" },
-      { "text": "Context variable", "value": "C" },
-      { "text": "Custom Apex class", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Session-persistent and secure. Ref: AgentForce Session Memory"
-  },
-  {
-    "id": 173,
-    "text": "Sales reps can’t find SDR Agent. Cause?",
-    "options": [
-      { "text": "Agent not deployed", "value": "A" },
-      { "text": "Incorrect profile settings", "value": "B" },
-      { "text": "Missing ‘Use SDR Agent’ permission set", "value": "C" },
-      { "text": "Data Cloud not enabled", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Required permission set. Ref: Agentforce Access Control"
-  },
-  {
-    "id": 174,
-    "text": "Make Einstein email draft more casual. Adjustment?",
-    "options": [
-      { "text": "Make Less Formal", "value": "A" },
-      { "text": "Increase token limit", "value": "B" },
-      { "text": "Use Flex template", "value": "C" },
-      { "text": "Enable hybrid search", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Direct tone adjustment. Ref: Einstein Sales Emails"
-  },
-  {
-    "id": 175,
-    "text": "Test action selection with real utterances. Tool?",
-    "options": [
-      { "text": "Testing Center", "value": "A" },
-      { "text": "Prompt Builder", "value": "B" },
-      { "text": "Data Cloud Insights", "value": "C" },
-      { "text": "User Utterances dashboard", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Simulates full interactions. Ref: AgentForce Testing Center"
-  },
-  {
-    "id": 176,
-    "text": "Email draft shows placeholders. Cause?",
-    "options": [
-      { "text": "User lacks field permissions", "value": "A" },
-      { "text": "Template not activated", "value": "B" },
-      { "text": "Data Library not indexed", "value": "C" },
-      { "text": "Incorrect LLM model", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "FLS blocks data → placeholder. Ref: Einstein Sales Emails Troubleshooting"
-  },
-  {
-    "id": 177,
-    "text": "Universal Containers’ administrator has developed a new agent in a sandbox environment and now wants to deploy it to production. What should the administrator do to deploy an agent?",
-    "options": [
-      { "text": "Manually recreate in production", "value": "A" },
-      { "text": "Use Data Cloud sync", "value": "B" },
-      { "text": "Create an outbound change set with all the necessary agent components, then upload to production", "value": "C" },
-      { "text": "Export as JSON and import", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Change sets are the supported deployment method for Agentforce metadata. Ref: Salesforce Metadata Deployment Guide"
-  },
-  {
-    "id": 178,
-    "text": "An Agentforce is setting up a new org and needs to ensure that users can create and execute prompt templates. Which permission sets should the Agentforce Specialist assign?",
-    "options": [
-      { "text": "Prompt Template Admin only", "value": "A" },
-      { "text": "Prompt Template Manager for creating templates and Prompt Template User for executing templates", "value": "B" },
-      { "text": "System Administrator profile", "value": "C" },
-      { "text": "Data Cloud User", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Two distinct permission sets: Manager = create/edit, User = execute. Ref: Trailhead: Prompt Template Permissions"
-  },
-  {
-    "id": 181,
-    "text": "After an agent-customer conversation, which additional information does Einstein generate and fill, apart from the 'summary'?",
-    "options": [
-      { "text": "Sentiment score", "value": "A" },
-      { "text": "Customer feedback", "value": "B" },
-      { "text": "Issue and Resolution", "value": "C" },
-      { "text": "Interaction duration", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Work Summary includes Issue and Resolution fields. Ref: Einstein Work Summary Trailhead"
-  },
-  {
-    "id": 183,
-    "text": "Which action should the company take to ensure the Agentforce Service Agent can run this new flow as part of the new Agent Action?",
-    "options": [
-      { "text": "Activate flow in production", "value": "A" },
-      { "text": "Enable Data Cloud", "value": "B" },
-      { "text": "Assign the Run Flows permission to the Agentforce Agent user", "value": "C" },
-      { "text": "Use system context", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Agent user needs explicit Run Flows permission. Ref: Salesforce Flow Runtime Security"
-  },
-  {
-    "id": 184,
-    "text": "How should an Agentforce Specialist apply the power of conversational AI to this use case? (order status via flow)",
-    "options": [
-      { "text": "Create a custom Agent action which calls a flow", "value": "A" },
-      { "text": "Use Record Summary template", "value": "B" },
-      { "text": "Enable hybrid search", "value": "C" },
-      { "text": "Deploy Apex class", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Custom actions can invoke flows for real-time data. Ref: Agent Builder Docs"
-  },
-  {
-    "id": 185,
-    "text": "Which property of the Einstein Trust Layer addresses no data used for training, no retention, no access by LLM provider?",
-    "options": [
-      { "text": "Data Masking", "value": "A" },
-      { "text": "Zero-Data Retention Policy", "value": "B" },
-      { "text": "Prompt Defense", "value": "C" },
-      { "text": "Secure Grounding", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Core Einstein Trust Layer feature. Ref: Einstein Trust Layer Overview"
-  },
-  {
-    "id": 187,
-    "text": "How does the LLM in Agentforce identify and execute the action to show open opportunities?",
-    "options": [
-      { "text": "The LLM interprets the request, generates a plan by identifying topics and actions, and executes them", "value": "A" },
-      { "text": "Uses static rules", "value": "B" },
-      { "text": "Queries Data Cloud directly", "value": "C" },
-      { "text": "Relies on user selection", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Full Atlas Reasoning Engine flow. Ref: Agentforce Reasoning Engine"
-  },
-  {
-    "id": 188,
-    "text": "Which best practice should UC follow to avoid modifying CRM data in Testing Center?",
-    "options": [
-      { "text": "Enable read-only mode", "value": "A" },
-      { "text": "Use production org", "value": "B" },
-      { "text": "Use the Testing Center only in the sandbox environment", "value": "C" },
-      { "text": "Disable grounding", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Testing Center is safe in sandbox; production modifies data. Ref: TESTING CENTER DOCS"
-  },
-  {
-    "id": 189,
-    "text": "For the given flow, what should the Agentforce Specialist consider about the running user's data access?",
-    "options": [
-      { "text": "System context overrides permissions", "value": "A" },
-      { "text": "The custom action adheres to the permissions, FLS, and sharing settings configured in the flow", "value": "B" },
-      { "text": "No access restrictions apply", "value": "C" },
-      { "text": "Requires admin permissions", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Flows respect user context unless system mode. Ref: Salesforce Flow Runtime Security"
-  },
-  {
-    "id": 190,
-    "text": "How should the Agentforce Specialist meet this requirement? (external service → prompt)",
-    "options": [
-      { "text": "Use Apex class", "value": "A" },
-      { "text": "Use External Service Record merge fields", "value": "B" },
-      { "text": "Enable hybrid search", "value": "C" },
-      { "text": "Create custom retriever", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "External Services → Record → Merge field. Ref: AgentForce External Services"
-  },
-  {
-    "id": 191,
-    "text": "What is an appropriate use case for leveraging Agentforce Sales Agent?",
-    "options": [
-      { "text": "Enable sales team to use natural language to invoke defined sales tasks grounded in data with policy enforcement", "value": "A" },
-      { "text": "Automate financial forecasting", "value": "B" },
-      { "text": "Manage inventory levels", "value": "C" },
-      { "text": "Generate legal documents", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Core Sales Agent use case. Ref: Agentforce for Sales Use Cases"
-  },
-  {
-    "id": 192,
-    "text": "Which AI capability should UC use? (email replies grounded in Knowledge)",
-    "options": [
-      { "text": "Prompt Builder", "value": "A" },
-      { "text": "Einstein Service Replies for Email", "value": "B" },
-      { "text": "Sales Coach", "value": "C" },
-      { "text": "Conversation Insights", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Specific for email channel. Ref: Einstein for Service"
-  },
-  {
-    "id": 193,
-    "text": "What is a required step to connect the agent to the Digital Experience site using Messaging for In-App and Web?",
-    "options": [
-      { "text": "Configure a messaging Lightning web component using standard or custom Lightning Type for Agentforce", "value": "A" },
-      { "text": "Enable Data Cloud", "value": "B" },
-      { "text": "Assign permission set", "value": "C" },
-      { "text": "Create Flex template", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Required for web messaging. Ref: Digital Experience + Agentforce"
-  },
-  {
-    "id": 194,
-    "text": "Which configuration ensures the right tasks are handled by the right agents?",
-    "options": [
-      { "text": "SDR Agent for lead qualification, Service Agent for support tickets, Employee Agent for HR requests", "value": "A" },
-      { "text": "Single agent for all tasks", "value": "B" },
-      { "text": "Use role hierarchy", "value": "C" },
-      { "text": "Manual task assignment", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Agent type specialization. Ref: Agentforce Types"
-  },
-  {
-    "id": 197,
-    "text": "How should the Agentforce Specialist include these instructions on a new line in the prompt template?",
-    "options": [
-      { "text": "Surround them with triple quotes (\"\"\")", "value": "A" },
-      { "text": "Use single quotes", "value": "B" },
-      { "text": "Add as merge field", "value": "C" },
-      { "text": "Embed in Apex", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Standard syntax for instructions. Ref: Prompt Builder Syntax"
-  },
-  {
-    "id": 198,
-    "text": "After configuring and saving a Salesforce Agentforce Data Library, which components are automatically created?",
-    "options": [
-      { "text": "Data stream only", "value": "A" },
-      { "text": "Search index only", "value": "B" },
-      { "text": "A data stream, a search index, and a retriever", "value": "C" },
-      { "text": "Retriever only", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Full RAG pipeline auto-created. Ref: Salesforce AI Specialist Material"
-  },
-  {
-    "id": 199,
-    "text": "What should An Agentforce recommend? (external LLM in Prompt Builder)",
-    "options": [
-      { "text": "Use Apex class", "value": "A" },
-      { "text": "Use BYO-LLM functionality in Einstein Studio", "value": "B" },
-      { "text": "Enable hybrid search", "value": "C" },
-      { "text": "Create custom retriever", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Secure integration path. Ref: Einstein Studio Documentation"
-  },
-  {
-    "id": 200,
-    "text": "Which DLO represents an overarching container capturing contiguous interactions with one or more AI agents?",
-    "options": [
-      { "text": "AlAgentInteraction", "value": "A" },
-      { "text": "AlAgentRecord", "value": "B" },
-      { "text": "AlAgentSession", "value": "C" },
-      { "text": "AlAgentTransaction", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Parent object for session. Ref: AgentForce Data Cloud Reporting Guide"
-  },
-  {
-    "id": 201,
-    "text": "How should the Agentforce Specialist integrate the custom LLM into Salesforce? (fine-tuned on OpenAI)",
-    "options": [
-      { "text": "Use External Services", "value": "A" },
-      { "text": "Add the fine-tuned LLM in Einstein Studio Model Builder", "value": "B" },
-      { "text": "Create custom Apex", "value": "C" },
-      { "text": "Enable Data Cloud", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "BYOM with data control. Ref: Einstein Studio Documentation"
-  },
-  {
-    "id": 202,
-    "text": "What considerations should an Agentforce Specialist be aware of when using Record Snapshots grounding?",
-    "options": [
-      { "text": "Activities such as tasks and events are excluded", "value": "A" },
-      { "text": "All related lists included", "value": "B" },
-      { "text": "Requires Data Cloud", "value": "C" },
-      { "text": "No permission checks", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Polymorphic limitation. Ref: Agentforce Prompt Grounding Docs"
-  },
-  {
-    "id": 203,
-    "text": "Which grounding technique should the AI Specialist use to include data from the related list of opportunities?",
-    "options": [
-      { "text": "Use Record Summary", "value": "A" },
-      { "text": "Use merge fields to reference the default related list of opportunities", "value": "B" },
-      { "text": "Enable hybrid search", "value": "C" },
-      { "text": "Create custom retriever", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Default related list supported. Ref: Prompt Builder Supported Fields"
-  },
-  {
-    "id": 204,
-    "text": "What should UC do to troubleshoot the issue? (Knowledge not grounding in agent)",
-    "options": [
-      { "text": "Reindex Knowledge articles", "value": "A" },
-      { "text": "Enable hybrid search", "value": "B" },
-      { "text": "Ensure the Data Cloud User permission set has been assigned to the Agentforce Service Agent User", "value": "C" },
-      { "text": "Use different LLM", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Data Cloud access required for retriever. Ref: Agentforce Knowledge Integration"
-  },
-  {
-    "id": 205,
-    "text": "Which use case is best supported by Salesforce Agent's capabilities?",
-    "options": [
-      { "text": "Bring together a conversational interface for interacting with AI for all Salesforce users", "value": "A" },
-      { "text": "Automate financial forecasting", "value": "B" },
-      { "text": "Manage inventory", "value": "C" },
-      { "text": "Generate legal documents", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Core Agentforce value. Ref: Agentforce Overview"
-  },
-  {
-    "id": 206,
-    "text": "Universal Containers plans to automatically populate the Description field on the Account object. Which type of prompt template should UC use?",
-    "options": [
-      { "text": "Field Generation prompt template", "value": "A" },
-      { "text": "Record Summary", "value": "B" },
-      { "text": "Flex template", "value": "C" },
-      { "text": "Email Configuration", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Direct field write. Ref: Prompt Template Types"
-  },
-  {
-    "id": 207,
-    "text": "What should An Agentforce consider when adding a related list on the Account object to be used in the prompt template?",
-    "options": [
-      { "text": "After selecting a related list, use the field picker to choose merge fields in Prompt Builder", "value": "A" },
-      { "text": "Enable Data Cloud", "value": "B" },
-      { "text": "Create custom Apex", "value": "C" },
-      { "text": "Use hybrid search", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Standard workflow. Ref: Prompt Builder > Related Lists"
-  },
-  {
-    "id": 208,
-    "text": "In addition to Recipient and Sender, which object should An Agentforce utilize for inserting merge fields into a Sales email template prompt?",
-    "options": [
-      { "text": "Opportunity", "value": "A" },
-      { "text": "Recipient Account", "value": "B" },
-      { "text": "Contact", "value": "C" },
-      { "text": "Lead", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Account-level context. Ref: Einstein Sales Emails"
-  },
-  {
-    "id": 209,
-    "text": "Which prompt template type should UC use and which consideration should UC review? (Field Generation + audit)",
-    "options": [
-      { "text": "Field Generation, and that Dynamic Fields is enabled", "value": "A" },
-      { "text": "Record Summary, enable Data Cloud", "value": "B" },
-      { "text": "Flex, use hybrid search", "value": "C" },
-      { "text": "Email Configuration, assign permissions", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Required for audit. Ref: Einstein Trust Layer + Field Generation"
-  },
-  {
-    "id": 210,
-    "text": "What should the team use to access externally-hosted models in the Salesforce Platform? (AWS-hosted LLM)",
-    "options": [
-      { "text": "Model Builder", "value": "A" },
-      { "text": "Data Cloud", "value": "B" },
-      { "text": "Custom Apex", "value": "C" },
-      { "text": "External Services", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "BYOM integration. Ref: Einstein Studio"
-  },
-  {
-    "id": 211,
-    "text": "Which approach should an AgentForce Specialist implement? (booking sequence)",
-    "options": [
-      { "text": "Use merge fields", "value": "A" },
-      { "text": "Create custom variables that store completion status, then implement conditional filters", "value": "B" },
-      { "text": "Enable hybrid search", "value": "C" },
-      { "text": "Use Record Summary", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Deterministic execution. Ref: Agentforce Action Dependencies"
-  },
-  {
-    "id": 212,
-    "text": "What is causing the problem? (Prompt Builder not visible)",
-    "options": [
-      { "text": "LLM not activated", "value": "A" },
-      { "text": "The Prompt Template Manager permission set was not assigned correctly", "value": "B" },
-      { "text": "Data Cloud not enabled", "value": "C" },
-      { "text": "Template not deployed", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Manager required for access. Ref: Prompt Builder Setup"
-  },
-  {
-    "id": 213,
-    "text": "What should UC consider when implementing this approach? (answer from similar cases)",
-    "options": [
-      { "text": "Enable hybrid search", "value": "A" },
-      { "text": "Use Record Summary", "value": "B" },
-      { "text": "Create an unstructured data model object (UDMO) based on Case object and create an index on it", "value": "C" },
-      { "text": "Deploy Apex class", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "UDMO for unstructured text. Ref: Data Cloud Indexing"
-  },
-  {
-    "id": 214,
-    "text": "What should An Agentforce recommend to resolve the issue? (data masking misalignment)",
-    "options": [
-      { "text": "Reindex Data Library", "value": "A" },
-      { "text": "Configure data masking in the Einstein Trust Layer setup", "value": "B" },
-      { "text": "Enable hybrid search", "value": "C" },
-      { "text": "Use different LLM", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Central configuration. Ref: Einstein Trust Layer Data Masking"
-  },
-  {
-    "id": 215,
-    "text": "What is the most likely cause of this issue? (flow fails in production)",
-    "options": [
-      { "text": "The flow was not manually activated in the production org after the deployment", "value": "A" },
-      { "text": "Incorrect LLM model", "value": "B" },
-      { "text": "Missing permission set", "value": "C" },
-      { "text": "Data Cloud not enabled", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Flows must be activated post-deploy. Ref: Salesforce Flow Deployment"
-  },
-  {
-    "id": 216,
-    "text": "A sales manager needs to contact leads at scale with hyper-relevant solutions. Which Salesforce solution best suits this need?",
-    "options": [
-      { "text": "Sales Coach", "value": "A" },
-      { "text": "Prompt Builder", "value": "B" },
-      { "text": "Data Cloud Insights", "value": "C" },
-      { "text": "Testing Center", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Scalable email generation. Ref: Einstein Sales Emails"
-  },
-  {
-    "id": 217,
-    "text": "What functionality allows the Agentforce Specialist to achieve this? (analyze user inputs)",
-    "options": [
-      { "text": "Prompt Builder", "value": "A" },
-      { "text": "Testing Center", "value": "B" },
-      { "text": "User Utterances dashboard", "value": "C" },
-      { "text": "Conversation Insights", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Raw input analysis. Ref: Einstein Agentforce Specialist Guide"
-  },
-  {
-    "id": 218,
-    "text": "Which process is appropriate to find the root cause of the hallucination behavior?",
-    "options": [
-      { "text": "Increase token limit", "value": "A" },
-      { "text": "Examine the prompt instructions and contents of the chunks shown in the resolved prompt output", "value": "B" },
-      { "text": "Disable grounding", "value": "C" },
-      { "text": "Use different LLM", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Debug resolved prompt. Ref: AgentForce Troubleshooting Guide"
-  },
-  {
-    "id": 219,
-    "text": "Which approach should the Agentforce Specialist implement? (misspellings)",
-    "options": [
-      { "text": "Hybrid search", "value": "A" },
-      { "text": "Keyword search", "value": "B" },
-      { "text": "Semantic search", "value": "C" },
-      { "text": "Vector search", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Handles typos + semantics. Ref: AgentForce Search Optimization Guide"
-  },
-  {
-    "id": 220,
-    "text": "What is an important consideration for this requirement? (CRM data as JSON)",
-    "options": [
-      { "text": "Use merge fields", "value": "A" },
-      { "text": "Apex code can be used to return a JSON formatted merge field", "value": "B" },
-      { "text": "Enable Data Cloud", "value": "C" },
-      { "text": "Use hybrid search", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Custom formatting. Ref: Prompt Builder Advanced"
-  },
-  {
-    "id": 221,
-    "text": "Which data grounding technique should the Agentforce Specialist recommend? (order status from ERP)",
-    "options": [
-      { "text": "Use Record Summary", "value": "A" },
-      { "text": "External Services Merge Fields", "value": "B" },
-      { "text": "Enable hybrid search", "value": "C" },
-      { "text": "Create custom retriever", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Real-time external data. Ref: AgentForce External Services"
-  },
-  {
-    "id": 222,
-    "text": "What is the most likely explanation for why the draft email shows these placeholders?",
-    "options": [
-      { "text": "The user does not have permission to access the fields", "value": "A" },
-      { "text": "Template not activated", "value": "B" },
-      { "text": "Data Library not indexed", "value": "C" },
-      { "text": "Incorrect LLM model", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "FLS blocks data. Ref: Einstein Sales Emails Troubleshooting"
-  },
-  {
-    "id": 223,
-    "text": "How should the Agentforce Specialist structure the prompt to ensure the LLM doesn't include extra text?",
-    "options": [
-      { "text": "Use maximum tokens", "value": "A" },
-      { "text": "Use well-defined output instructions and provide desired output examples", "value": "B" },
-      { "text": "Disable grounding", "value": "C" },
-      { "text": "Use static prompts", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Structured output best practice. Ref: Prompt Builder Design Guide"
-  },
-  {
-    "id": 224,
-    "text": "What is the cause of the random nature of this error? (token limit)",
-    "options": [
-      { "text": "Incorrect LLM model", "value": "A" },
-      { "text": "The number of tokens generated by the dynamic nature of the prompt template will vary by record", "value": "B" },
-      { "text": "Missing permission set", "value": "C" },
-      { "text": "Data Cloud not enabled", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Grounding size varies. Ref: Prompt Builder Limits"
-  },
-  {
-    "id": 225,
-    "text": "Which use case functionality of Model Builder aligns with UC's request? (churn)",
-    "options": [
-      { "text": "Sentiment analysis", "value": "A" },
-      { "text": "Customer churn prediction", "value": "B" },
-      { "text": "Lead scoring", "value": "C" },
-      { "text": "Inventory forecasting", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Predictive AI. Ref: Einstein Studio"
-  },
-  {
-    "id": 227,
-    "text": "UC made an email template and now needs to connect it to a Service Agent. What should an Agentforce Specialist recommend?",
-    "options": [
-      { "text": "Create an Email Configuration for the Service Agent", "value": "A" },
-      { "text": "Use Flow Builder", "value": "B" },
-      { "text": "Enable merge fields", "value": "C" },
-      { "text": "Update Data Library", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Links template to agent. Ref: AgentForce for Service Guide"
-  },
-  {
-    "id": 228,
-    "text": "Which Einstein Generative AI feature should An Agentforce recommend? (video call insights)",
-    "options": [
-      { "text": "Prompt Builder", "value": "A" },
-      { "text": "Einstein Conversation Insights", "value": "B" },
-      { "text": "Sales Coach", "value": "C" },
-      { "text": "User Utterances dashboard", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Call analysis. Ref: Einstein Conversation Insights Setup"
-  },
-  {
-    "id": 229,
-    "text": "Universal Containers needs to create a custom prompt template that can be called from a Lightning web component. Which prompt template type should UC create?",
-    "options": [
-      { "text": "Record Summary", "value": "A" },
-      { "text": "Field Generation", "value": "B" },
-      { "text": "Flex", "value": "C" },
-      { "text": "Email Configuration", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "API/LWC invocation. Ref: AgentForce Developer Guide"
-  },
-  {
-    "id": 230,
-    "text": "On which AI capability should UC train the service agents? (replies from Knowledge)",
-    "options": [
-      { "text": "Service Replies", "value": "A" },
-      { "text": "Prompt Builder", "value": "B" },
-      { "text": "Sales Coach", "value": "C" },
-      { "text": "Conversation Insights", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Knowledge-grounded replies. Ref: Einstein for Service"
-  },
-  {
-    "id": 231,
-    "text": "What is the likely issue? (Knowledge not answering)",
-    "options": [
-      { "text": "Data Library not indexed", "value": "A" },
-      { "text": "Incorrect LLM model", "value": "B" },
-      { "text": "The Agentforce Service Agent user was not given the Allow View Knowledge permission set", "value": "C" },
-      { "text": "Template not activated", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Knowledge access required. Ref: AgentForce Knowledge Access Guide"
-  },
-  {
-    "id": 232,
-    "text": "What should UC do to ensure only relevant data is retrieved? (too many results)",
-    "options": [
-      { "text": "Define filters to narrow the search results based on specific conditions", "value": "A" },
-      { "text": "Use keyword search", "value": "B" },
-      { "text": "Increase token limit", "value": "C" },
-      { "text": "Disable grounding", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Reduce noise. Ref: Salesforce AI Specialist Material"
-  },
-  {
-    "id": 233,
-    "text": "Which retrieval approach should the company use? (model numbers + natural language)",
-    "options": [
-      { "text": "Keyword search", "value": "A" },
-      { "text": "Semantic search", "value": "B" },
-      { "text": "Use hybrid search to combine keyword precision with semantic flexibility", "value": "C" },
-      { "text": "Vector search", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Best of both. Ref: AgentForce Search Optimization Guide"
-  },
-  {
-    "id": 234,
-    "text": "Which corrective action should UC implement to improve content relevancy? (outdated docs)",
-    "options": [
-      { "text": "Reindex Data Library", "value": "A" },
-      { "text": "Configure a custom retriever with recency filter", "value": "B" },
-      { "text": "Enable hybrid search", "value": "C" },
-      { "text": "Use different LLM", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Filter by update date. Ref: Data Library + Knowledge Integration"
-  },
-  {
-    "id": 235,
-    "text": "Which feature in the Einstein Trust Layer best supports UC's need? (secure grounding)",
-    "options": [
-      { "text": "Data Masking", "value": "A" },
-      { "text": "Dynamic grounding with secure data retrieval", "value": "B" },
-      { "text": "Prompt Defense", "value": "C" },
-      { "text": "Zero-Data Retention", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Respects user permissions. Ref: Einstein Trust Layer – Secure Data Retrieval"
-  },
-  {
-    "id": 236,
-    "text": "Which approach should the Agentforce Specialist recommend? (prep for calls with multiple data sources)",
-    "options": [
-      { "text": "Use Apex class", "value": "A" },
-      { "text": "Create custom retriever", "value": "B" },
-      { "text": "Use a prompt template grounded on CRM and Data Cloud data using standard foundation models", "value": "C" },
-      { "text": "Enable hybrid search", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "No-code grounding. Ref: Prompt Builder > Flex Templates"
-  },
-  {
-    "id": 238,
-    "text": "What is a key reason for implementing Agent?",
-    "options": [
-      { "text": "Generate legal documents", "value": "A" },
-      { "text": "Manage inventory", "value": "B" },
-      { "text": "Streamlining workflows and automating repetitive tasks", "value": "C" },
-      { "text": "Financial forecasting", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Core value. Ref: Agentforce Overview"
-  },
-  {
-    "id": 239,
-    "text": "What is a Salesforce Agentforce Specialist able to configure in Data Masking within the Einstein Trust Layer?",
-    "options": [
-      { "text": "LLM model selection", "value": "A" },
-      { "text": "Search filters", "value": "B" },
-      { "text": "The privacy data entities to be masked", "value": "C" },
-      { "text": "Token limits", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Entity-level control. Ref: Einstein Trust Layer Data Masking"
-  },
-  {
-    "id": 240,
-    "text": "How should an organization use the Einstein Trust layer to audit masked data?",
-    "options": [
-      { "text": "Utilize the audit trail that captures all LLM submitted prompts in Data Cloud", "value": "A" },
-      { "text": "Enable hybrid search", "value": "B" },
-      { "text": "Use Testing Center", "value": "C" },
-      { "text": "Create custom Apex", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Full audit. Ref: Einstein Trust Layer Audit"
-  },
-  {
-    "id": 241,
-    "text": "Universal Containers wants to enable its sales team to use AI to suggest recommended products. Which type of prompt template should UC use?",
-    "options": [
-      { "text": "Record Summary", "value": "A" },
-      { "text": "Field Generation", "value": "B" },
-      { "text": "Flex prompt template", "value": "C" },
-      { "text": "Email Configuration", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Custom logic. Ref: Prompt Builder > Flex Templates"
-  },
-  {
-    "id": 242,
-    "text": "Sales reps should not be able to create or edit prompt templates. Which permission set should an AgentForce Specialist assign?",
-    "options": [
-      { "text": "Prompt Execute User", "value": "A" },
-      { "text": "Prompt Template Manager", "value": "B" },
-      { "text": "System Administrator", "value": "C" },
-      { "text": "Data Cloud User", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Execute-only. Ref: AgentForce Permissions Guide"
-  },
-  {
-    "id": 243,
-    "text": "Which feature in the Einstein Trust Layer helps to minimize jailbreaking and prompt injection?",
-    "options": [
-      { "text": "Data Masking", "value": "A" },
-      { "text": "Zero-Data Retention", "value": "B" },
-      { "text": "Prompt Defense", "value": "C" },
-      { "text": "Secure Grounding", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Input sanitization. Ref: Einstein Trust Layer"
-  },
-  {
-    "id": 244,
-    "text": "Which flow element should UC use? (Flex prompt with flow data)",
-    "options": [
-      { "text": "Create Record", "value": "A" },
-      { "text": "Add Prompt Instructions", "value": "B" },
-      { "text": "Update Record", "value": "C" },
-      { "text": "Get Records", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Pass data to prompt. Ref: Salesforce Flow + Prompt Integration"
-  },
-  {
-    "id": 245,
-    "text": "Which action should an AI Specialist take to confirm toxicity is being managed?",
-    "options": [
-      { "text": "Enable hybrid search", "value": "A" },
-      { "text": "Use Testing Center", "value": "B" },
-      { "text": "Create a Trust Layer audit report within Data Cloud with toxicity filter", "value": "C" },
-      { "text": "Increase token limit", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Reporting. Ref: Einstein Trust Layer Audit"
-  },
-  {
-    "id": 246,
-    "text": "What should an Agentforce Specialist recommend as the best solution? (customer verification)",
-    "options": [
-      { "text": "Use merge fields", "value": "A" },
-      { "text": "Enable Data Cloud", "value": "B" },
-      { "text": "Create a custom variable IsCustomerVerified with conditional filter", "value": "C" },
-      { "text": "Use hybrid search", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Deterministic security. Ref: Agentforce Action Dependencies"
-  },
-  {
-    "id": 247,
-    "text": "Which scenario best illustrates the use of Model Context Protocol (MCP)?",
-    "options": [
-      { "text": "A legal assistant agent using MCP to dynamically find a document classification API", "value": "A" },
-      { "text": "Static rule-based action", "value": "B" },
-      { "text": "Manual API selection", "value": "C" },
-      { "text": "Data Cloud sync", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Tool discovery. Ref: MCP Documentation"
-  },
-  {
-    "id": 248,
-    "text": "What should the development team review in the Custom Agent Action configuration?",
-    "options": [
-      { "text": "Permission sets", "value": "A" },
-      { "text": "Instructions", "value": "B" },
-      { "text": "Token limits", "value": "C" },
-      { "text": "Data Library", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Core component. Ref: Agent Builder > Custom Actions"
-  },
-  {
-    "id": 249,
-    "text": "How should the Agentforce Specialist obtain related items? (Opportunity Products, Events, Tone)",
-    "options": [
-      { "text": "Call prompt initiated flow to fetch and ground the required data", "value": "A" },
-      { "text": "Use static merge fields", "value": "B" },
-      { "text": "Enable hybrid search", "value": "C" },
-      { "text": "Create custom retriever", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Dynamic data. Ref: Salesforce Flow + Prompt Integration"
-  },
-  {
-    "id": 250,
-    "text": "What should UC do to ensure the agent retrieves the right information? (latest policy)",
-    "options": [
-      { "text": "Reindex Data Library", "value": "A" },
-      { "text": "Set up an Agentforce Data Library to store and index policy documents", "value": "B" },
-      { "text": "Enable hybrid search", "value": "C" },
-      { "text": "Use different LLM", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Real-time sync. Ref: Data Library + Knowledge Integration"
-  },
-  {
-    "id": 251,
-    "text": "Which feature should the Agentforce Specialist set up? (competitor mentions in calls)",
-    "options": [
-      { "text": "Prompt Builder", "value": "A" },
-      { "text": "User Utterances dashboard", "value": "B" },
-      { "text": "Call Insights", "value": "C" },
-      { "text": "Sales Coach", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Keyword tracking. Ref: Einstein Conversation Insights Setup"
-  },
-  {
-    "id": 252,
-    "text": "Which Agentforce capability should make it easier for the agent to consume the external product recommendation tool?",
-    "options": [
-      { "text": "Model Context Protocol (MCP)", "value": "A" },
-      { "text": "Prompt Builder", "value": "B" },
-      { "text": "Data Cloud", "value": "C" },
-      { "text": "Custom Apex", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "API discovery. Ref: MCP"
-  },
-  {
-    "id": 253,
-    "text": "What is best practice when refining Agent custom action instructions?",
-    "options": [
-      { "text": "Provide examples of user messages that are expected to trigger the action", "value": "A" },
-      { "text": "Increase token limit", "value": "B" },
-      { "text": "Disable grounding", "value": "C" },
-      { "text": "Use static prompts", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Clarity for LLM. Ref: Agentforce Custom Actions"
-  },
-  {
-    "id": 254,
-    "text": "Why should the team use Agent as the solution? (personalized emails)",
-    "options": [
-      { "text": "To generate relevant content when engaging with each customer", "value": "A" },
-      { "text": "To manage inventory", "value": "B" },
-      { "text": "To forecast financials", "value": "C" },
-      { "text": "To generate legal documents", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Dynamic generation. Ref: Agentforce Use Cases"
-  },
-  {
-    "id": 255,
-    "text": "Which type of agent should the Agentforce Specialist create? (complaint resolution with escalation)",
-    "options": [
-      { "text": "SDR Agent", "value": "A" },
-      { "text": "Employee Agent", "value": "B" },
-      { "text": "Service Agent with a Flex prompt template", "value": "C" },
-      { "text": "Sales Agent", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Service use case. Ref: Agentforce for Service"
-  },
-  {
-    "id": 256,
-    "text": "Which topic and Agent Action will be shown in the Agent Builder? (Knowledge Q&A)",
-    "options": [
-      { "text": "Custom topic and Flow Action", "value": "A" },
-      { "text": "Sales topic and Email Action", "value": "B" },
-      { "text": "General FAQ topic and Answers Questions with Knowledge Action", "value": "C" },
-      { "text": "Service topic and Case Action", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Standard configuration. Ref: Agent Builder"
-  },
-  {
-    "id": 257,
-    "text": "What should the Agentforce Specialist do to ensure the prompt template's effectiveness?",
-    "options": [
-      { "text": "Monitor and refine the template based on user feedback", "value": "A" },
-      { "text": "Increase token limit", "value": "B" },
-      { "text": "Disable grounding", "value": "C" },
-      { "text": "Use static prompts", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Iterative improvement. Ref: Prompt Builder Best Practices"
-  },
-  {
-    "id": 258,
-    "text": "What is the correct process to leverage Prompt Builder?",
-    "options": [
-      { "text": "Create Apex, deploy, test", "value": "A" },
-      { "text": "Select type, develop prompt, select grounding, pick model, test", "value": "B" },
-      { "text": "Enable Data Cloud, create template", "value": "C" },
-      { "text": "Assign permissions, deploy", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Standard workflow. Ref: Prompt Builder Guide"
-  },
-  {
-    "id": 259,
-    "text": "What should the Agentforce Specialist do to expose the template to the user? (Field Generation)",
-    "options": [
-      { "text": "Enable hybrid search", "value": "A" },
-      { "text": "Associate the template with the form field on the Lightning page", "value": "B" },
-      { "text": "Create custom Apex", "value": "C" },
-      { "text": "Reindex Data Library", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Layout integration. Ref: Field Generation Setup"
-  },
-  {
-    "id": 260,
-    "text": "Which prompt template type should the Agentforce Specialist recommend? (dynamic form field with human in loop)",
-    "options": [
-      { "text": "Field Generation", "value": "A" },
-      { "text": "Record Summary", "value": "B" },
-      { "text": "Flex", "value": "C" },
-      { "text": "Email Configuration", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Editable by user. Ref: Field Generation"
-  },
-  {
-    "id": 261,
-    "text": "Which prompt template follows Salesforce prompt design best practices? (case summary)",
-    "options": [
-      { "text": "Role + Task + Context + Constraints + Format with 5 sentences, plain language, etc.", "value": "A" },
-      { "text": "Freeform text prompt", "value": "B" },
-      { "text": "Keyword-based prompt", "value": "C" },
-      { "text": "Static template", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "RTCCF model. Ref: Prompt Builder Design Guide"
-  }
+  id: 144,
+  text: "What does a toxicity score of 1 indicate in Einstein Trust Layer?",
+  options: [
+    { text: "Unsafe content", value: "A" },
+    { text: "Safe content", value: "B" },
+    { text: "Neutral content", value: "C" },
+    { text: "Needs review", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Score ranges 0 (unsafe) to 1 (safe). 1 = fully safe. Ref: Einstein Trust Layer Documentation"
+},
+{
+  id: 145,
+  text: "Agent ignores PDF attachments in Knowledge articles. How to fix?",
+  options: [
+    { text: "Update permissions", value: "A" },
+    { text: "Reindex articles", value: "B" },
+    { text: "Enable attachments + UDMO", value: "C" },
+    { text: "Switch to hybrid search", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Use ContentDocumentVersion UDMO to index attachment content. Ref: AgentForce Data Cloud Indexing Guide"
+},
+{
+  id: 146,
+  text: "Agent hallucinates weblinks. How to debug?",
+  options: [
+    { text: "Increase tokens", value: "A" },
+    { text: "Check prompt and chunks", value: "B" },
+    { text: "Disable grounding", value: "C" },
+    { text: "Change LLM", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Inspect resolved prompt and chunks to trace hallucination source. Ref: AgentForce Troubleshooting Guide"
+},
+{
+  id: 147,
+  text: "Custom action calls a flow. Running user’s data access?",
+  options: [
+    { text: "System context", value: "A" },
+    { text: "Respects user permissions", value: "B" },
+    { text: "No restrictions", value: "C" },
+    { text: "Needs admin access", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Flows respect user permissions unless set to system context. Ref: Salesforce Flow Runtime Security"
+},
+{
+  id: 148,
+  text: "Analyze user inputs for patterns. Which dashboard?",
+  options: [
+    { text: "User Utterances", value: "A" },
+    { text: "Agent Performance", value: "B" },
+    { text: "Data Cloud Insights", value: "C" },
+    { text: "Conversation Insights", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "User Utterances dashboard shows raw inputs for analysis. Ref: Einstein Agentforce Specialist Guide"
+},
+{
+  id: 149,
+  text: "Modified data masking fields. Next step?",
+  options: [
+    { text: "Reindex library", value: "A" },
+    { text: "Test prompt with masked data", value: "B" },
+    { text: "Update retriever", value: "C" },
+    { text: "Deploy to production", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Test AI output after masking changes. Ref: Einstein Trust Layer Overview"
+},
+{
+  id: 150,
+  text: "Connect Employee Agent to Slack. What step?",
+  options: [
+    { text: "Create Slack connection", value: "A" },
+    { text: "Enable Slack in Data Cloud", value: "B" },
+    { text: "Assign Slack permissions", value: "C" },
+    { text: "Configure prompt", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Connect Salesforce org to Slack workspace first. Ref: AgentForce for Slack Integration Guide"
+},
+{
+  id: 151,
+  text: "Exact match on policy clause numbers. Search type?",
+  options: [
+    { text: "Keyword search", value: "A" },
+    { text: "Semantic search", value: "B" },
+    { text: "Hybrid search", value: "C" },
+    { text: "Vector search", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Keyword search ensures exact matches. Ref: AgentForce Search Optimization Guide"
+},
+{
+  id: 152,
+  text: "After saving Data Library, created in Data Cloud?",
+  options: [
+    { text: "Data stream only", value: "A" },
+    { text: "Search index only", value: "B" },
+    { text: "Stream, index, retriever", value: "C" },
+    { text: "Retriever only", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Auto-creates stream, index, retriever. Ref: Salesforce AI Specialist Material"
+},
+{
+  id: 153,
+  text: "Deploy Agentforce from Sales to Service. Key consideration?",
+  options: [
+    { text: "Copy Sales prompts", value: "A" },
+    { text: "Rebuild agent", value: "B" },
+    { text: "Review Service topics/actions", value: "C" },
+    { text: "Use same permissions", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Topics and actions are context-specific. Ref: Salesforce Help: Einstein Agent Setup"
+},
+{
+  id: 154,
+  text: "Valid use case for Agentforce Sales Agent?",
+  options: [
+    { text: "Natural language tasks", value: "A" },
+    { text: "Code generation", value: "B" },
+    { text: "Financial forecasting", value: "C" },
+    { text: "Inventory management", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Conversational tasks with grounding. Ref: Agentforce for Sales Use Cases"
+},
+{
+  id: 155,
+  text: "Custom action not in correct order. Fix?",
+  options: [
+    { text: "Specify API dependencies", value: "A" },
+    { text: "Increase tokens", value: "B" },
+    { text: "Rebuild in Flow", value: "C" },
+    { text: "Change LLM", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Planner uses dependencies for order. Ref: Einstein Bot Developer Guide"
+},
+{
+  id: 156,
+  text: "Ground email on Opportunity Products, Events, Tone. How?",
+  options: [
+    { text: "Prompt-initiated flow", value: "A" },
+    { text: "Custom Apex class", value: "B" },
+    { text: "Static merge fields", value: "C" },
+    { text: "External API call", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Flow fetches dynamic data for prompt. Ref: Salesforce Flow + Prompt Integration"
+},
+{
+  id: 157,
+  text: "Detailed product description from latest data. Template?",
+  options: [
+    { text: "Flex template", value: "A" },
+    { text: "Record Summary", value: "B" },
+    { text: "Field Generation", value: "C" },
+    { text: "Email Configuration", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Record Summary pulls latest record data. Ref: Prompt Template Types"
+},
+{
+  id: 158,
+  text: "Best prompt for case summary (5 sentences, plain language)?",
+  options: [
+    { text: "RTCCF model", value: "A" },
+    { text: "Freeform prompt", value: "B" },
+    { text: "Keyword-based prompt", value: "C" },
+    { text: "Static template", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Follows RTCCF best practice model. Ref: Prompt Builder Design Guide"
+},
+{
+  id: 159,
+  text: "Reduce retriever latency. Prioritize?",
+  options: [
+    { text: "Increase tokens", value: "A" },
+    { text: "Define efficient filters", value: "B" },
+    { text: "Switch to keyword search", value: "C" },
+    { text: "Use larger LLM", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Filters narrow search scope for faster retrieval. Ref: Salesforce AI Specialist Material"
+},
+{
+  id: 160,
+  text: "DLO for full agent session (multiple interactions)?",
+  options: [
+    { text: "AlAgentInteraction", value: "A" },
+    { text: "AlAgentRecord", value: "B" },
+    { text: "AlAgentSession", value: "C" },
+    { text: "AlAgentTransaction", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Parent container for entire session. Ref: AgentForce Data Cloud Reporting Guide"
+},
+{
+  id: 161,
+  text: "Secure customer ID across agent handoffs (no LLM access)?",
+  options: [
+    { text: "Use merge fields", value: "A" },
+    { text: "Enable data masking", value: "B" },
+    { text: "Agent API + context variable", value: "C" },
+    { text: "Custom Apex class", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Context variables via API are secure. Ref: AgentForce API Security Guide"
+},
+{
+  id: 162,
+  text: "Enable Agentforce in Slack. Key steps?",
+  options: [
+    { text: "Assign permissions", value: "A" },
+    { text: "Create Slack channel", value: "B" },
+    { text: "Connect, install, assign access", value: "C" },
+    { text: "Enable Data Cloud", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Official 3-step process. Ref: AgentForce for Slack Guide"
+},
+{
+  id: 163,
+  text: "Best practice for standard LLM in Prompt Builder?",
+  options: [
+    { text: "Use maximum tokens", value: "A" },
+    { text: "Role-play as character", value: "B" },
+    { text: "Disable grounding", value: "C" },
+    { text: "Use static prompts", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Role sets tone and context. Ref: Prompt Builder Best Practices"
+},
+{
+  id: 164,
+  text: "SDR Agent access to NA leads only. How?",
+  options: [
+    { text: "Profile permissions", value: "A" },
+    { text: "Role hierarchy", value: "B" },
+    { text: "Criteria-based sharing", value: "C" },
+    { text: "Manual assignment", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Least privilege for regional access. Ref: AgentForce Security Guide"
+},
+{
+  id: 165,
+  text: "Connect email template to Service Agent. How?",
+  options: [
+    { text: "Create Email Configuration", value: "A" },
+    { text: "Use Flow Builder", value: "B" },
+    { text: "Enable merge fields", value: "C" },
+    { text: "Update Data Library", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Links template to agent. Ref: AgentForce for Service Guide"
+},
+{
+  id: 166,
+  text: "Field Generation: Sparkle icon missing. Missed step?",
+  options: [
+    { text: "Enable Field Generation", value: "A" },
+    { text: "Assign permissions", value: "B" },
+    { text: "Link field to prompt", value: "C" },
+    { text: "Create custom field", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Must link field to template on layout. Ref: Field Generation Setup"
+},
+{
+  id: 167,
+  text: "Customize standard case summary. How?",
+  options: [
+    { text: "Custom Record Summary", value: "A" },
+    { text: "Modify default template", value: "B" },
+    { text: "Use Flex template", value: "C" },
+    { text: "Enable hybrid search", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Clone or create custom template. Ref: Prompt Builder Customization"
+},
+{
+  id: 168,
+  text: "Call prompt from LWC. Template type?",
+  options: [
+    { text: "Record Summary", value: "A" },
+    { text: "Field Generation", value: "B" },
+    { text: "Flex", value: "C" },
+    { text: "Email Configuration", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Flex supports API/LWC invocation. Ref: AgentForce Developer Guide"
+},
+{
+  id: 169,
+  text: "Escalate from AI to human queue. Tool?",
+  options: [
+    { text: "Omni-Channel Flow", value: "A" },
+    { text: "Custom Apex class", value: "B" },
+    { text: "Data Cloud trigger", value: "C" },
+    { text: "Prompt Builder", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Routes to queue with skills/priority. Ref: Agentforce + Omni-Channel"
+},
+{
+  id: 170,
+  text: "Junior reps need objection handling practice. Solution?",
+  options: [
+    { text: "Prompt Builder", value: "A" },
+    { text: "Data Cloud Insights", value: "B" },
+    { text: "Sales Coach", value: "C" },
+    { text: "Testing Center", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Simulates conversations with feedback. Ref: AgentForce Sales Enablement"
+},
+{
+  id: 171,
+  text: "How does Agentforce pick the right action?",
+  options: [
+    { text: "Static rules", value: "A" },
+    { text: "LLM selects topic/action", value: "B" },
+    { text: "Random assignment", value: "C" },
+    { text: "User selection", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "LLM-driven with fallback. Ref: AgentForce Reasoning Flow"
+},
+{
+  id: 172,
+  text: "Persist dietary preferences across session. How?",
+  options: [
+    { text: "Use merge fields", value: "A" },
+    { text: "Enable data masking", value: "B" },
+    { text: "Context variable", value: "C" },
+    { text: "Custom Apex class", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Session-persistent and secure. Ref: AgentForce Session Memory"
+},
+{
+  id: 173,
+  text: "Sales reps can’t find SDR Agent. Cause?",
+  options: [
+    { text: "Agent not deployed", value: "A" },
+    { text: "Incorrect profile", value: "B" },
+    { text: "Missing SDR permission", value: "C" },
+    { text: "Data Cloud disabled", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Requires 'Use SDR Agent' permission. Ref: Agentforce Access Control"
+},
+{
+  id: 174,
+  text: "Make Einstein email draft more casual. Adjustment?",
+  options: [
+    { text: "Make Less Formal", value: "A" },
+    { text: "Increase tokens", value: "B" },
+    { text: "Use Flex template", value: "C" },
+    { text: "Enable hybrid search", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Direct tone adjustment. Ref: Einstein Sales Emails"
+},
+{
+  id: 175,
+  text: "Test action selection with real utterances. Tool?",
+  options: [
+    { text: "Testing Center", value: "A" },
+    { text: "Prompt Builder", value: "B" },
+    { text: "Data Cloud Insights", value: "C" },
+    { text: "User Utterances", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Simulates full interactions. Ref: AgentForce Testing Center"
+},
+{
+  id: 176,
+  text: "Email draft shows placeholders. Cause?",
+  options: [
+    { text: "Missing field permissions", value: "A" },
+    { text: "Template not activated", value: "B" },
+    { text: "Library not indexed", value: "C" },
+    { text: "Incorrect LLM", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "FLS blocks data, shows placeholders. Ref: Einstein Sales Emails Troubleshooting"
+},
+{
+  id: 177,
+  text: "Deploy new agent from sandbox to production. How?",
+  options: [
+    { text: "Manually recreate", value: "A" },
+    { text: "Use Data Cloud", value: "B" },
+    { text: "Outbound change set", value: "C" },
+    { text: "Export as JSON", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Change sets for Agentforce metadata. Ref: Salesforce Metadata Deployment Guide"
+},
+{
+  id: 178,
+  text: "Ensure users can create/execute prompt templates. Permissions?",
+  options: [
+    { text: "Admin only", value: "A" },
+    { text: "Manager and User sets", value: "B" },
+    { text: "System Administrator", value: "C" },
+    { text: "Data Cloud User", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Manager for create, User for execute. Ref: Trailhead: Prompt Template Permissions"
+},
+{
+  id: 181,
+  text: "Post-conversation, what does Einstein generate besides summary?",
+  options: [
+    { text: "Sentiment score", value: "A" },
+    { text: "Customer feedback", value: "B" },
+    { text: "Issue and Resolution", value: "C" },
+    { text: "Interaction duration", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Work Summary includes Issue and Resolution. Ref: Einstein Work Summary Trailhead"
+},
+{
+  id: 183,
+  text: "Ensure Service Agent runs new flow. Action?",
+  options: [
+    { text: "Activate flow", value: "A" },
+    { text: "Enable Data Cloud", value: "B" },
+    { text: "Assign Run Flows permission", value: "C" },
+    { text: "Use system context", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Agent needs Run Flows permission. Ref: Salesforce Flow Runtime Security"
+},
+{
+  id: 184,
+  text: "Apply conversational AI for order status via flow?",
+  options: [
+    { text: "Custom action calls flow", value: "A" },
+    { text: "Use Record Summary", value: "B" },
+    { text: "Enable hybrid search", value: "C" },
+    { text: "Deploy Apex class", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Custom actions invoke flows for data. Ref: Agent Builder Docs"
+},
+{
+  id: 185,
+  text: "Einstein Trust Layer: no data training/retention?",
+  options: [
+    { text: "Data Masking", value: "A" },
+    { text: "Zero-Data Retention", value: "B" },
+    { text: "Prompt Defense", value: "C" },
+    { text: "Secure Grounding", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Core Trust Layer feature. Ref: Einstein Trust Layer Overview"
+},
+{
+  id: 187,
+  text: "LLM identifies/executes action for open opportunities?",
+  options: [
+    { text: "Interprets, plans, executes", value: "A" },
+    { text: "Uses static rules", value: "B" },
+    { text: "Queries Data Cloud", value: "C" },
+    { text: "User selection", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Atlas Reasoning Engine flow. Ref: Agentforce Reasoning Engine"
+},
+{
+  id: 188,
+  text: "Avoid modifying CRM data in Testing Center?",
+  options: [
+    { text: "Enable read-only", value: "A" },
+    { text: "Use production org", value: "B" },
+    { text: "Use sandbox only", value: "C" },
+    { text: "Disable grounding", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Sandbox safe; production modifies data. Ref: TESTING CENTER DOCS"
+},
+{
+  id: 189,
+  text: "Flow’s running user data access consideration?",
+  options: [
+    { text: "System context overrides", value: "A" },
+    { text: "Respects permissions, FLS", value: "B" },
+    { text: "No restrictions", value: "C" },
+    { text: "Needs admin access", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Flows respect user context. Ref: Salesforce Flow Runtime Security"
+},
+{
+  id: 190,
+  text: "External service to prompt requirement?",
+  options: [
+    { text: "Use Apex class", value: "A" },
+    { text: "External Service merge fields", value: "B" },
+    { text: "Enable hybrid search", value: "C" },
+    { text: "Custom retriever", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "External Services to merge field. Ref: AgentForce External Services"
+},
+{
+  id: 191,
+  text: "Appropriate Agentforce Sales Agent use case?",
+  options: [
+    { text: "Natural language tasks", value: "A" },
+    { text: "Financial forecasting", value: "B" },
+    { text: "Inventory management", value: "C" },
+    { text: "Legal documents", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Core Sales Agent use case. Ref: Agentforce for Sales Use Cases"
+},
+{
+  id: 192,
+  text: "AI capability for email replies from Knowledge?",
+  options: [
+    { text: "Prompt Builder", value: "A" },
+    { text: "Service Replies for Email", value: "B" },
+    { text: "Sales Coach", value: "C" },
+    { text: "Conversation Insights", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Specific for email channel. Ref: Einstein for Service"
+},
+{
+  id: 193,
+  text: "Connect agent to Digital Experience site messaging?",
+  options: [
+    { text: "Configure messaging LWC", value: "A" },
+    { text: "Enable Data Cloud", value: "B" },
+    { text: "Assign permission set", value: "C" },
+    { text: "Create Flex template", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Required for web messaging. Ref: Digital Experience + Agentforce"
+},
+{
+  id: 194,
+  text: "Ensure right tasks for right agents?",
+  options: [
+    { text: "Specialized agent types", value: "A" },
+    { text: "Single agent for all", value: "B" },
+    { text: "Use role hierarchy", value: "C" },
+    { text: "Manual assignment", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Agent type specialization. Ref: Agentforce Types"
+},
+{
+  id: 197,
+  text: "Include instructions on new line in prompt template?",
+  options: [
+    { text: "Use triple quotes", value: "A" },
+    { text: "Use single quotes", value: "B" },
+    { text: "Add as merge field", value: "C" },
+    { text: "Embed in Apex", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Standard syntax for instructions. Ref: Prompt Builder Syntax"
+},
+{
+  id: 198,
+  text: "After saving Data Library, components created?",
+  options: [
+    { text: "Data stream only", value: "A" },
+    { text: "Search index only", value: "B" },
+    { text: "Stream, index, retriever", value: "C" },
+    { text: "Retriever only", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Full RAG pipeline created. Ref: Salesforce AI Specialist Material"
+},
+{
+  id: 199,
+  text: "Use external LLM in Prompt Builder?",
+  options: [
+    { text: "Use Apex class", value: "A" },
+    { text: "BYO-LLM in Einstein Studio", value: "B" },
+    { text: "Enable hybrid search", value: "C" },
+    { text: "Custom retriever", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Secure integration path. Ref: Einstein Studio Documentation"
+},
+{
+  id: 200,
+  text: "DLO for contiguous AI agent interactions?",
+  options: [
+    { text: "AlAgentInteraction", value: "A" },
+    { text: "AlAgentRecord", value: "B" },
+    { text: "AlAgentSession", value: "C" },
+    { text: "AlAgentTransaction", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Parent object for session. Ref: AgentForce Data Cloud Reporting Guide"
+},
+{
+  id: 201,
+  text: "Integrate fine-tuned LLM (OpenAI) into Salesforce?",
+  options: [
+    { text: "Use External Services", value: "A" },
+    { text: "Add to Einstein Studio", value: "B" },
+    { text: "Create custom Apex", value: "C" },
+    { text: "Enable Data Cloud", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "BYOM with data control. Ref: Einstein Studio Documentation"
+},
+{
+  id: 202,
+  text: "Record Snapshots grounding considerations?",
+  options: [
+    { text: "Excludes tasks/events", value: "A" },
+    { text: "Includes all related lists", value: "B" },
+    { text: "Requires Data Cloud", value: "C" },
+    { text: "No permission checks", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Polymorphic limitation. Ref: Agentforce Prompt Grounding Docs"
+},
+{
+  id: 203,
+  text: "Grounding for related list of opportunities?",
+  options: [
+    { text: "Use Record Summary", value: "A" },
+    { text: "Merge fields for related list", value: "B" },
+    { text: "Enable hybrid search", value: "C" },
+    { text: "Custom retriever", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Default related list supported. Ref: Prompt Builder Supported Fields"
+},
+{
+  id: 204,
+  text: "Troubleshoot Knowledge not grounding in agent?",
+  options: [
+    { text: "Reindex articles", value: "A" },
+    { text: "Enable hybrid search", value: "B" },
+    { text: "Assign Data Cloud permission", value: "C" },
+    { text: "Use different LLM", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Data Cloud access required. Ref: Agentforce Knowledge Integration"
+},
+{
+  id: 205,
+  text: "Best supported Agentforce use case?",
+  options: [
+    { text: "Conversational AI interface", value: "A" },
+    { text: "Financial forecasting", value: "B" },
+    { text: "Inventory management", value: "C" },
+    { text: "Legal documents", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Core Agentforce value. Ref: Agentforce Overview"
+},
+{
+  id: 206,
+  text: "Populate Account Description field. Template type?",
+  options: [
+    { text: "Field Generation", value: "A" },
+    { text: "Record Summary", value: "B" },
+    { text: "Flex template", value: "C" },
+    { text: "Email Configuration", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Direct field write. Ref: Prompt Template Types"
+},
+{
+  id: 207,
+  text: "Add related list for prompt template on Account?",
+  options: [
+    { text: "Use field picker for merge fields", value: "A" },
+    { text: "Enable Data Cloud", value: "B" },
+    { text: "Create custom Apex", value: "C" },
+    { text: "Use hybrid search", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Standard workflow. Ref: Prompt Builder > Related Lists"
+},
+{
+  id: 208,
+  text: "Merge fields for Sales email template?",
+  options: [
+    { text: "Opportunity", value: "A" },
+    { text: "Recipient Account", value: "B" },
+    { text: "Contact", value: "C" },
+    { text: "Lead", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Account-level context. Ref: Einstein Sales Emails"
+},
+{
+  id: 209,
+  text: "Field Generation + audit. Template and consideration?",
+  options: [
+    { text: "Field Generation, Dynamic Fields", value: "A" },
+    { text: "Record Summary, Data Cloud", value: "B" },
+    { text: "Flex, hybrid search", value: "C" },
+    { text: "Email Config, permissions", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Required for audit. Ref: Einstein Trust Layer + Field Generation"
+},
+{
+  id: 210,
+  text: "Access AWS-hosted LLM in Salesforce?",
+  options: [
+    { text: "Model Builder", value: "A" },
+    { text: "Data Cloud", value: "B" },
+    { text: "Custom Apex", value: "C" },
+    { text: "External Services", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "BYOM integration. Ref: Einstein Studio"
+},
+{
+  id: 211,
+  text: "Implement booking sequence?",
+  options: [
+    { text: "Use merge fields", value: "A" },
+    { text: "Custom variables, conditional filters", value: "B" },
+    { text: "Enable hybrid search", value: "C" },
+    { text: "Use Record Summary", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Deterministic execution. Ref: Agentforce Action Dependencies"
+},
+{
+  id: 212,
+  text: "Prompt Builder not visible. Cause?",
+  options: [
+    { text: "LLM not activated", value: "A" },
+    { text: "Missing Manager permission", value: "B" },
+    { text: "Data Cloud disabled", value: "C" },
+    { text: "Template not deployed", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Manager permission required. Ref: Prompt Builder Setup"
+},
+{
+  id: 213,
+  text: "Answer from similar cases. Consideration?",
+  options: [
+    { text: "Enable hybrid search", value: "A" },
+    { text: "Use Record Summary", value: "B" },
+    { text: "Create UDMO and index", value: "C" },
+    { text: "Deploy Apex class", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "UDMO for unstructured text. Ref: Data Cloud Indexing"
+},
+{
+  id: 214,
+  text: "Resolve data masking misalignment?",
+  options: [
+    { text: "Reindex Data Library", value: "A" },
+    { text: "Configure Trust Layer masking", value: "B" },
+    { text: "Enable hybrid search", value: "C" },
+    { text: "Use different LLM", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Central configuration. Ref: Einstein Trust Layer Data Masking"
+},
+{
+  id: 215,
+  text: "Flow fails in production. Cause?",
+  options: [
+    { text: "Flow not activated", value: "A" },
+    { text: "Incorrect LLM", value: "B" },
+    { text: "Missing permissions", value: "C" },
+    { text: "Data Cloud disabled", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Flows must be activated post-deploy. Ref: Salesforce Flow Deployment"
+},
+{
+  id: 216,
+  text: "Contact leads at scale with relevant solutions?",
+  options: [
+    { text: "Sales Coach", value: "A" },
+    { text: "Prompt Builder", value: "B" },
+    { text: "Data Cloud Insights", value: "C" },
+    { text: "Testing Center", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Scalable email generation. Ref: Einstein Sales Emails"
+},
+{
+  id: 217,
+  text: "Analyze user inputs. Functionality?",
+  options: [
+    { text: "Prompt Builder", value: "A" },
+    { text: "Testing Center", value: "B" },
+    { text: "User Utterances dashboard", value: "C" },
+    { text: "Conversation Insights", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Raw input analysis. Ref: Einstein Agentforce Specialist Guide"
+},
+{
+  id: 218,
+  text: "Find root cause of hallucination behavior?",
+  options: [
+    { text: "Increase tokens", value: "A" },
+    { text: "Check prompt and chunks", value: "B" },
+    { text: "Disable grounding", value: "C" },
+    { text: "Use different LLM", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Debug resolved prompt. Ref: AgentForce Troubleshooting Guide"
+},
+{
+  id: 219,
+  text: "Handle misspellings in search?",
+  options: [
+    { text: "Hybrid search", value: "A" },
+    { text: "Keyword search", value: "B" },
+    { text: "Semantic search", value: "C" },
+    { text: "Vector search", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Handles typos and semantics. Ref: AgentForce Search Optimization Guide"
+},
+{
+  id: 220,
+  text: "CRM data as JSON requirement?",
+  options: [
+    { text: "Use merge fields", value: "A" },
+    { text: "Apex for JSON merge field", value: "B" },
+    { text: "Enable Data Cloud", value: "C" },
+    { text: "Use hybrid search", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Custom formatting. Ref: Prompt Builder Advanced"
+},
+{
+  id: 221,
+  text: "Ground order status from ERP?",
+  options: [
+    { text: "Use Record Summary", value: "A" },
+    { text: "External Services merge fields", value: "B" },
+    { text: "Enable hybrid search", value: "C" },
+    { text: "Custom retriever", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Real-time external data. Ref: AgentForce External Services"
+},
+{
+  id: 222,
+  text: "Email draft shows placeholders. Why?",
+  options: [
+    { text: "Missing field permissions", value: "A" },
+    { text: "Template not activated", value: "B" },
+    { text: "Library not indexed", value: "C" },
+    { text: "Incorrect LLM", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "FLS blocks data. Ref: Einstein Sales Emails Troubleshooting"
+},
+{
+  id: 223,
+  text: "Ensure LLM avoids extra text in prompt?",
+  options: [
+    { text: "Use maximum tokens", value: "A" },
+    { text: "Define output instructions", value: "B" },
+    { text: "Disable grounding", value: "C" },
+    { text: "Use static prompts", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Structured output best practice. Ref: Prompt Builder Design Guide"
+},
+{
+  id: 224,
+  text: "Random token limit error cause?",
+  options: [
+    { text: "Incorrect LLM", value: "A" },
+    { text: "Varying prompt tokens", value: "B" },
+    { text: "Missing permissions", value: "C" },
+    { text: "Data Cloud disabled", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Grounding size varies. Ref: Prompt Builder Limits"
+},
+{
+  id: 225,
+  text: "Model Builder for churn prediction?",
+  options: [
+    { text: "Sentiment analysis", value: "A" },
+    { text: "Customer churn prediction", value: "B" },
+    { text: "Lead scoring", value: "C" },
+    { text: "Inventory forecasting", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Predictive AI. Ref: Einstein Studio"
+},
+{
+  id: 227,
+  text: "Connect email template to Service Agent?",
+  options: [
+    { text: "Create Email Configuration", value: "A" },
+    { text: "Use Flow Builder", value: "B" },
+    { text: "Enable merge fields", value: "C" },
+    { text: "Update Data Library", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Links template to agent. Ref: AgentForce for Service Guide"
+},
+{
+  id: 228,
+  text: "Feature for video call insights?",
+  options: [
+    { text: "Prompt Builder", value: "A" },
+    { text: "Conversation Insights", value: "B" },
+    { text: "Sales Coach", value: "C" },
+    { text: "User Utterances", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Call analysis. Ref: Einstein Conversation Insights Setup"
+},
+{
+  id: 229,
+  text: "Custom prompt template for LWC call?",
+  options: [
+    { text: "Record Summary", value: "A" },
+    { text: "Field Generation", value: "B" },
+    { text: "Flex", value: "C" },
+    { text: "Email Configuration", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "API/LWC invocation. Ref: AgentForce Developer Guide"
+},
+{
+  id: 230,
+  text: "Train service agents for Knowledge replies?",
+  options: [
+    { text: "Service Replies", value: "A" },
+    { text: "Prompt Builder", value: "B" },
+    { text: "Sales Coach", value: "C" },
+    { text: "Conversation Insights", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Knowledge-grounded replies. Ref: Einstein for Service"
+},
+{
+  id: 231,
+  text: "Knowledge not answering. Likely issue?",
+  options: [
+    { text: "Library not indexed", value: "A" },
+    { text: "Incorrect LLM", value: "B" },
+    { text: "Missing Knowledge permission", value: "C" },
+    { text: "Template not activated", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Requires View Knowledge permission. Ref: AgentForce Knowledge Access Guide"
+},
+{
+  id: 232,
+  text: "Ensure relevant data retrieval (too many results)?",
+  options: [
+    { text: "Define specific filters", value: "A" },
+    { text: "Use keyword search", value: "B" },
+    { text: "Increase tokens", value: "C" },
+    { text: "Disable grounding", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Filters reduce noise. Ref: Salesforce AI Specialist Material"
+},
+{
+  id: 233,
+  text: "Retrieval for model numbers + natural language?",
+  options: [
+    { text: "Keyword search", value: "A" },
+    { text: "Semantic search", value: "B" },
+    { text: "Hybrid search", value: "C" },
+    { text: "Vector search", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Combines keyword and semantic. Ref: AgentForce Search Optimization Guide"
+},
+{
+  id: 234,
+  text: "Improve content relevancy (outdated docs)?",
+  options: [
+    { text: "Reindex library", value: "A" },
+    { text: "Custom retriever with recency", value: "B" },
+    { text: "Enable hybrid search", value: "C" },
+    { text: "Use different LLM", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Filter by update date. Ref: Data Library + Knowledge Integration"
+},
+{
+  id: 235,
+  text: "Einstein Trust Layer for secure grounding?",
+  options: [
+    { text: "Data Masking", value: "A" },
+    { text: "Dynamic secure grounding", value: "B" },
+    { text: "Prompt Defense", value: "C" },
+    { text: "Zero-Data Retention", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Respects user permissions. Ref: Einstein Trust Layer – Secure Data Retrieval"
+},
+{
+  id: 236,
+  text: "Prep calls with multiple data sources?",
+  options: [
+    { text: "Use Apex class", value: "A" },
+    { text: "Custom retriever", value: "B" },
+    { text: "CRM/Data Cloud grounded prompt", value: "C" },
+    { text: "Enable hybrid search", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "No-code grounding. Ref: Prompt Builder > Flex Templates"
+},
+{
+  id: 238,
+  text: "Key reason for implementing Agent?",
+  options: [
+    { text: "Generate legal documents", value: "A" },
+    { text: "Manage inventory", value: "B" },
+    { text: "Automate workflows", value: "C" },
+    { text: "Financial forecasting", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Core value. Ref: Agentforce Overview"
+},
+{
+  id: 239,
+  text: "Configure Data Masking in Einstein Trust Layer?",
+  options: [
+    { text: "LLM model selection", value: "A" },
+    { text: "Search filters", value: "B" },
+    { text: "Privacy data entities", value: "C" },
+    { text: "Token limits", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Entity-level control. Ref: Einstein Trust Layer Data Masking"
+},
+{
+  id: 240,
+  text: "Audit masked data in Einstein Trust Layer?",
+  options: [
+    { text: "Use audit trail in Data Cloud", value: "A" },
+    { text: "Enable hybrid search", value: "B" },
+    { text: "Use Testing Center", value: "C" },
+    { text: "Create custom Apex", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Full audit. Ref: Einstein Trust Layer Audit"
+},
+{
+  id: 241,
+  text: "AI to suggest products for sales team. Template?",
+  options: [
+    { text: "Record Summary", value: "A" },
+    { text: "Field Generation", value: "B" },
+    { text: "Flex prompt", value: "C" },
+    { text: "Email Configuration", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Custom logic. Ref: Prompt Builder > Flex Templates"
+},
+{
+  id: 242,
+  text: "Sales reps execute-only prompt templates. Permission?",
+  options: [
+    { text: "Prompt Execute User", value: "A" },
+    { text: "Prompt Template Manager", value: "B" },
+    { text: "System Administrator", value: "C" },
+    { text: "Data Cloud User", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Execute-only permission. Ref: AgentForce Permissions Guide"
+},
+{
+  id: 243,
+  text: "Minimize jailbreaking in Einstein Trust Layer?",
+  options: [
+    { text: "Data Masking", value: "A" },
+    { text: "Zero-Data Retention", value: "B" },
+    { text: "Prompt Defense", value: "C" },
+    { text: "Secure Grounding", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Input sanitization. Ref: Einstein Trust Layer"
+},
+{
+  id: 244,
+  text: "Flow element for Flex prompt with flow data?",
+  options: [
+    { text: "Create Record", value: "A" },
+    { text: "Add Prompt Instructions", value: "B" },
+    { text: "Update Record", value: "C" },
+    { text: "Get Records", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Pass data to prompt. Ref: Salesforce Flow + Prompt Integration"
+},
+{
+  id: 245,
+  text: "Confirm toxicity management in Trust Layer?",
+  options: [
+    { text: "Enable hybrid search", value: "A" },
+    { text: "Use Testing Center", value: "B" },
+    { text: "Audit report with toxicity filter", value: "C" },
+    { text: "Increase tokens", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Reporting for toxicity. Ref: Einstein Trust Layer Audit"
+},
+{
+  id: 246,
+  text: "Best solution for customer verification?",
+  options: [
+    { text: "Use merge fields", value: "A" },
+    { text: "Enable Data Cloud", value: "B" },
+    { text: "Custom variable with filter", value: "C" },
+    { text: "Use hybrid search", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Deterministic security. Ref: Agentforce Action Dependencies"
+},
+{
+  id: 247,
+  text: "Best scenario for Model Context Protocol (MCP)?",
+  options: [
+    { text: "Dynamic document API", value: "A" },
+    { text: "Static rule action", value: "B" },
+    { text: "Manual API selection", value: "C" },
+    { text: "Data Cloud sync", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Tool discovery. Ref: MCP Documentation"
+},
+{
+  id: 248,
+  text: "Review in Custom Agent Action configuration?",
+  options: [
+    { text: "Permission sets", value: "A" },
+    { text: "Instructions", value: "B" },
+    { text: "Token limits", value: "C" },
+    { text: "Data Library", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Core component. Ref: Agent Builder > Custom Actions"
+},
+{
+  id: 249,
+  text: "Obtain Opportunity Products, Events, Tone?",
+  options: [
+    { text: "Prompt-initiated flow", value: "A" },
+    { text: "Static merge fields", value: "B" },
+    { text: "Enable hybrid search", value: "C" },
+    { text: "Custom retriever", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Dynamic data grounding. Ref: Salesforce Flow + Prompt Integration"
+},
+{
+  id: 250,
+  text: "Ensure agent retrieves latest policy info?",
+  options: [
+    { text: "Reindex library", value: "A" },
+    { text: "Setup Data Library", value: "B" },
+    { text: "Enable hybrid search", value: "C" },
+    { text: "Use different LLM", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Real-time sync. Ref: Data Library + Knowledge Integration"
+},
+{
+  id: 251,
+  text: "Feature for competitor mentions in calls?",
+  options: [
+    { text: "Prompt Builder", value: "A" },
+    { text: "User Utterances", value: "B" },
+    { text: "Call Insights", value: "C" },
+    { text: "Sales Coach", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Keyword tracking. Ref: Einstein Conversation Insights Setup"
+},
+{
+  id: 252,
+  text: "Consume external product recommendation tool?",
+  options: [
+    { text: "Model Context Protocol", value: "A" },
+    { text: "Prompt Builder", value: "B" },
+    { text: "Data Cloud", value: "C" },
+    { text: "Custom Apex", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "API discovery. Ref: MCP"
+},
+{
+  id: 253,
+  text: "Best practice for refining custom action instructions?",
+  options: [
+    { text: "Provide user message examples", value: "A" },
+    { text: "Increase tokens", value: "B" },
+    { text: "Disable grounding", value: "C" },
+    { text: "Use static prompts", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Clarity for LLM. Ref: Agentforce Custom Actions"
+},
+{
+  id: 254,
+  text: "Why use Agent for personalized emails?",
+  options: [
+    { text: "Generate relevant content", value: "A" },
+    { text: "Manage inventory", value: "B" },
+    { text: "Financial forecasting", value: "C" },
+    { text: "Legal documents", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Dynamic generation. Ref: Agentforce Use Cases"
+},
+{
+  id: 255,
+  text: "Agent type for complaint resolution with escalation?",
+  options: [
+    { text: "SDR Agent", value: "A" },
+    { text: "Employee Agent", value: "B" },
+    { text: "Service Agent with Flex", value: "C" },
+    { text: "Sales Agent", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Service use case. Ref: Agentforce for Service"
+},
+{
+  id: 256,
+  text: "Topic and action for Knowledge Q&A in Agent Builder?",
+  options: [
+    { text: "Custom topic, Flow", value: "A" },
+    { text: "Sales topic, Email", value: "B" },
+    { text: "FAQ topic, Knowledge Action", value: "C" },
+    { text: "Service topic, Case", value: "D" }
+  ],
+  correctAnswer: "C",
+  explanation: "Standard configuration. Ref: Agent Builder"
+},
+{
+  id: 257,
+  text: "Ensure prompt template effectiveness?",
+  options: [
+    { text: "Monitor and refine", value: "A" },
+    { text: "Increase tokens", value: "B" },
+    { text: "Disable grounding", value: "C" },
+    { text: "Use static prompts", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Iterative improvement. Ref: Prompt Builder Best Practices"
+},
+{
+  id: 258,
+  text: "Correct process to leverage Prompt Builder?",
+  options: [
+    { text: "Apex, deploy, test", value: "A" },
+    { text: "Select type, develop, test", value: "B" },
+    { text: "Enable Data Cloud", value: "C" },
+    { text: "Assign permissions", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Standard workflow. Ref: Prompt Builder Guide"
+},
+{
+  id: 259,
+  text: "Expose Field Generation template to user?",
+  options: [
+    { text: "Enable hybrid search", value: "A" },
+    { text: "Link to form field", value: "B" },
+    { text: "Create custom Apex", value: "C" },
+    { text: "Reindex library", value: "D" }
+  ],
+  correctAnswer: "B",
+  explanation: "Layout integration. Ref: Field Generation Setup"
+},
+{
+  id: 260,
+  text: "Dynamic form field with human-in-loop template?",
+  options: [
+    { text: "Field Generation", value: "A" },
+    { text: "Record Summary", value: "B" },
+    { text: "Flex", value: "C" },
+    { text: "Email Configuration", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "Editable by user. Ref: Field Generation"
+},
+{
+  id: 261,
+  text: "Prompt template for case summary best practice?",
+  options: [
+    { text: "RTCCF model", value: "A" },
+    { text: "Freeform prompt", value: "B" },
+    { text: "Keyword-based prompt", value: "C" },
+    { text: "Static template", value: "D" }
+  ],
+  correctAnswer: "A",
+  explanation: "RTCCF model. Ref: Prompt Builder Design Guide"
+}
     ];
 
     const QuizApp = () => {
@@ -3214,4 +3214,5 @@
   </script>
 </body>
 </html>
+
 
